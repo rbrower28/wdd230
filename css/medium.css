@@ -1,0 +1,13 @@
+
+@media (min-width: 32.5em) {
+    
+  body {
+    width: 100%;
+  }
+
+  #ryan-name {
+    font-size: xx-large;
+    margin: auto;
+  }
+
+}

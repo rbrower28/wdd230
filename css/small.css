@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
 /*
 
@@ -17,10 +18,10 @@ html {
 }
 
 body {
-  width: 100%;
-  max-width: 500px;
+  width: 90%;
+  max-width: 460px;
   background-color: #E2E2F3;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Yeseva One", Helvetica, sans-serif;
   margin: auto;
   padding: 15px;
   border-radius: 0 0 10px 10px;
@@ -45,8 +46,8 @@ header {
 }
 
 #ryan-name {
-  font-size: xx-large;
-  margin: auto;
+  font-size: 6.2vw;
+  margin: auto auto auto 11%;
   justify-content: center;
   color: white;
   text-shadow: 2px 2px 10px black;
