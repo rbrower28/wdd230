@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+html {
+  background-color: #DBE6DD;
+  font-family: 'Mochiy Pop One', sans-serif;
+  padding: 20px;
+  letter-spacing: 1px;
+}
+
+body {
+  max-width: 75em;
+  margin: auto;
+}
+
+header,
+footer {
+  background-color: #4F6C23;
+  box-shadow: 5px 5px #447188;
+  border: 1px solid dimgray;
+  border-radius: 15px;
+  padding: 20px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: white;
+  text-shadow: 2px 2px 10px black;
+  margin: 0 auto 15px;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-shadow: 2px 2px 10px black;
+  text-align: center;
+  margin: auto;
+  background-color: #447188;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+h3 {
+  color: white;
+  text-shadow: 2px 2px 10px black;
+  margin: auto;
+  text-align: center;
+}
+
+h4 {
+  margin-left: 10px;
+}
+
+main {
+  display: block;
+}
+
+section {
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 15px;
+  display: block;
+  box-shadow: 5px 5px #447188;
+}
+
+section p {
+  margin: 20px 15px 10px;
+  line-height: 150%;
+  letter-spacing: .5px;
+  text-indent: 40px;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  color: #447188;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+}
+
+a:hover { 
+  background-color: #447188;
+  color: #F4E1E3;
+}
+
+img {
+  width: 100%;
+  margin: 20px 0;
+}
+
+hr {
+  color: #4F6C23;
+  border: 1px solid #4F6C23;
+  margin: 0 10px;
+}
+
+footer h3 {
+  margin: 10px 10px 20px;
+}
+
+footer a {
+  color: #447188;
+  text-align: center;
+  background-color: white;
+}
+
+footer a:hover {
+  color: white;
+}

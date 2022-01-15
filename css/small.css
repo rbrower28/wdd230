@@ -48,9 +48,10 @@ header {
 #ryan-name {
   font-size: 6.2vw;
   margin: auto auto auto 11%;
-  justify-content: center;
   color: white;
+  justify-content: center;
   text-shadow: 2px 2px 10px black;
+  margin: auto;
 }
 
 main {
@@ -71,6 +72,11 @@ h3 {
 
 hr {
   color: gray;
+}
+
+.light {
+  color: white;
+  text-shadow: 2px 2px 10px black;
 }
 
 #lesson-list li {
