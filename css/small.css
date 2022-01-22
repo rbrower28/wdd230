@@ -64,6 +64,10 @@ img {
   margin: 10px 0 10px 20px;
 }
 
+.small {
+  max-width: 200px;
+}
+
 h3 {
   margin-bottom: 0;
   text-shadow: 2px 2px 20px gray;
