@@ -4,8 +4,8 @@
   <head>
     <title>Smokey Point Chamber of Commerce ~ Home</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content= "Homepage for the Smokey Point Chamber of Commerce, and home to all links and vital imformation pertaining to the organization." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content= "Homepage for the Smokey Point Chamber of Commerce, and home to all links and vital information pertaining to the organization." />
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/medium.css" />
     <link rel="stylesheet" type="text/css" href="css/large.css" />
@@ -21,7 +21,11 @@
           <li><a href="#">Join Now!</a></li>
           <li class="large"><a href="#">Events</a></li>
           <li class="large"><a href="#">Contact Us</a></li>
-          <li class="large"><a href="#">Site Plan</a></li>
+          <li class="large">
+            <a href="facebook.com" class="social"><img src="images/facebook.png" /></a>
+            <a href="instagram.com" class="social"><img src="images/instagram.png" /></a>
+          </li>
+          <li class="large" id="date"></li>
         </ul>
         <button id="stack-top">&#9776;</button>
       </nav>
@@ -30,17 +34,69 @@
       <ul id="lower-nav" class="hidden">
         <li><a href="#">Events</a></li>
         <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Site Plan</a></li>
+        <li>
+          <a href="facebook.com" class="social"><img src="images/facebook.png" /></a>
+          <a href="instagram.com" class="social"><img src="images/instagram.png" /></a>
+        </li>
       </ul>
+      <p id="date2" class="hidden"></p>
       <button id="stack-bottom" class="hidden">x</button>
     </nav>
   </header>
 
-  <section id="banner">
-    <p>an img overlooking arlington, headed with "Smokey Point Chamber of Commerce"</p>
-  </section>
+  <main>
+    <section id="banner">
+      <p>an img overlooking arlington, headed with "Smokey Point Chamber of Commerce"</p>
+    </section>
+
+    <section id="call-action">
+      <p>a call to action</p>
+    </section>
+
+    <section id="showcase">
+      <p>a showcase of local businesses</p>
+      <div id="bus1"></div>
+      <div id="bus2"></div>
+      <div id="bus3"></div>
+    </section>
+    
+    <section id="join-now">
+      <p>an invitation to join the chamber</p>
+    </section>
+
+    <section id="events">
+      <p>showing some of our events</p>
+      <div id="event1"></div>
+      <div id="event2"></div>
+      <div id="event3"></div>
+      <div id="event4"></div>
+      <div id="event5"></div>
+      <div id="event6"></div>
+    </section>
+
+    <section id="weather">
+      <p>the weather</p>
+    </section>
+  </main>
 
   <footer>
+    <div id="main-footer">
+      <img id="logo-footer" src="images/smokeypoint_logo.png" alt="Logo for the chamber of commerce" />
+      <div id="first-footer">
+        <h3>Smokey Point Chamber of Commerce</h3>
+        <p>123 State Ave NW</p>
+        <p>Arlington, WA 98223</p>
+      </div>
+      <div id="second-footer">
+        <p>info@smokeyptcc.org</p>
+        <p>+1 (360) 555-6789</p>
+        <a href="#">Location Map</a>
+      </div>
+    </div>
+
+    <div id="base-footer">
+      <p>&copy;<span id="year"></span> Smokey Point Chamber | Ryan Brower | WDD230 Project | Last Updated: <span id="last-modified"></span></p>
+    </div>
   </footer>
 
   <script src="js/script.js"></script>
