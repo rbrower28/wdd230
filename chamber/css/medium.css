@@ -1,0 +1,44 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+  #logo {
+    max-width: 160px;
+    left: 20px;
+  }
+
+  header {
+    grid-template-columns: 200px 3% 1fr;
+  }
+
+  #nav-top {
+    grid-column: 1/5;
+    grid-template-columns: 200px 3% 1fr;
+  }
+
+  #lower {
+    grid-template-columns: 1fr 10%;
+    float: right;
+  }
+
+  #lower-nav {
+    width: 100%;
+    margin: 5px;
+    text-align: justify;
+  }
+
+  #lower-nav li {
+    display: inline;
+    border-bottom: none;
+    border-right: 1px solid rgba(0,0,0,.3);
+  }
+
+  #lower-nav li:last-of-type {
+    border-right: none;
+  }
+
+  #stack-bottom {
+    margin: auto;
+    align-content: center;
+  }
+
+} /*end medium */

@@ -1,0 +1,32 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+  .large {
+    display: inline-block;
+  }
+
+  #stack-top,
+  #stack-bottom,
+  #lower,
+  #lower-nav {
+    display: none;
+  }
+
+  #logo {
+    max-width: 200px;
+  }
+
+  header,
+  #nav-top {
+    grid-template-columns: 240px 10% 1fr;
+  }
+
+  #nav-top nav {
+    grid-column: 3;
+  }
+
+  #nav-top nav ul li {
+    padding: 0 3vw;
+  }
+  
+  } /*end large */
