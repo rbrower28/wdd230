@@ -65,6 +65,30 @@
   #weather { grid-column: 2; grid-row: 4; }
   #events { grid-column: 1/3; grid-row: 5; }
 
+  #banner h1 {
+    font-size: 2rem;
+    padding-left: 60px;
+  }
+
+  .join {
+    font-size: 1.5rem;
+    padding: 12px 30px 10px;
+  }
+
+  #showcase {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #showcase div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 18px;
+  }
+
+  #bus3 {
+    display: inherit;
+  }
 
 
   /* ----- FOOTER STYLING ----- */
@@ -81,3 +105,11 @@
 
 
 } /*end medium */
+
+@media only screen and (min-width: 47rem) {
+
+  #banner h1 {
+    padding-top: 240px;
+  }
+
+}
