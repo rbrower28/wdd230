@@ -49,7 +49,6 @@
   }
 
 
-
   /* ----- MAIN STYLING ----- */
 
   main {
@@ -80,15 +79,25 @@
   }
 
   #showcase div {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 18px;
+    padding: 15px;
   }
 
   #bus3 {
-    display: inherit;
+    display: block;
   }
+
+  .label p {
+    font-size: 80%;
+  }
+
+  #events {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 1fr 1fr;
+    padding: 0 0 10px;
+  }
+
+  #events h3 { grid-column: 1/4; grid-row: 1; }
 
 
   /* ----- FOOTER STYLING ----- */

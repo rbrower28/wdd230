@@ -23,8 +23,8 @@
           <li class="large"><a href="#">Events</a></li>
           <li class="large"><a href="#">Contact Us</a></li>
           <li class="large">
-            <a href="facebook.com" class="social"><img src="images/facebook.png" /></a>
-            <a href="instagram.com" class="social"><img src="images/instagram.png" /></a>
+            <a href="facebook.com" class="social"><img src="images/facebook.png" alt="the link to facebook" /></a>
+            <a href="instagram.com" class="social"><img src="images/instagram.png" alt="the link to instagram" /></a>
           </li>
           <li class="large" id="date"></li>
         </ul>
@@ -56,39 +56,79 @@
     </section>
 
     <section id="showcase">
-      <h3>Meet some local businesses!</h3>
+      <h3>Find Some Local Businesses!</h3>
       <div id="bus1">
         <h4>Blue Bird Cafe</h4>
-        <p>A local american diner, family owned and operated since 1958.</p>
+        <p>A local american diner, family owned since 1958.</p>
         <p>Located on Olympic Ave.</p>
         <a class="more" href="#">See More...</a>
       </div>
       <div id="bus2">
         <h4>Ellie's at the Airport</h4>
-        <p></p>
+        <p>Family Style Restaurant with a view of the runway.</p>
+        <p>East of the Arlington Airport.</p>
       </div>
       <div id="bus3">
         <h4>Country Burger</h4>
-        <p></p>
+        <p>Gourmet burgers and shakes with a local feel.</p>
+        <p>Off of Lakewood Road.</p>
       </div>
+    </section>
+
+    <section id="events">
+      <h3>See What's Happening!</h3>
+
+      <div id="event1">
+        <h6 id="eventdate1"></h6>
+        <p>Chamber Meeting - 7pm</p>
+      </div>
+      <div id="event2">
+        <h6 id="eventdate2"></h6>
+        <p>Open House - 6pm</p>
+      </div>
+      <div id="event3">
+        <h6 id="eventdate3"></h6>
+        <p>Chamber Meeting - 7pm</p>
+      </div>
+      <div id="event4">
+        <h6 id="eventdate4"></h6>
+        <p>Business Lunch - 11am</p>
+      </div>
+      <div id="event5">
+        <h6 id="eventdate5"></h6>
+        <p><em>Tim's</em> Grand Opening</p>
+      </div>
+      <div id="event6">
+        <h6 id="eventdate6"></h6>
+        <p>Chamber Meeting - 7pm</p>
+      </div>
+
     </section>
     
     <section id="join-now">
       <button class="join" id="join2">Join Us Now!</button>
     </section>
 
-    <section id="events">
-      <h3>showing some of our events</h3>
-      <div id="event1"></div>
-      <div id="event2"></div>
-      <div id="event3"></div>
-      <div id="event4"></div>
-      <div id="event5"></div>
-      <div id="event6"></div>
-    </section>
-
     <section id="weather">
-      <h3>the weather</h3>
+      <h2>It Is Currently...</h2>
+      <img id="w_img" src="./images/cloudy.png" alt="an icon indicating a cloudy day" />
+
+      <div class="temp">
+        <span id="temp"></span>
+        <span id="temp_label">°F</span>
+      </div>
+
+      <h4 id="conditions"></h4>
+
+      <div class="label">
+        <p>Wind Speed:</p>
+        <p>Wind Chill:</p>
+      </div>
+
+      <div class="data">
+        <p id="w_speed"></p>
+        <p id="w_chill"></p>
+      </div>
     </section>
   </main>
 
