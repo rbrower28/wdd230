@@ -37,6 +37,11 @@
   
   /* ----- MAIN STYLING ----- */
 
+  #banner { background-image: url("../images/arlington_downtown-1000w.jpg"); }
+  #showcase { background-image: url("../images/3fingers-1000w.png"); }
+  #join-now { background-image: url("../images/street_sign-1000w.jpg"); }
+  #events { background-image: url("../images/marysville-1000w.jpg"); }
+
   main {
     grid-template-columns: 2fr 3fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;

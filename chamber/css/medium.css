@@ -64,6 +64,11 @@
   #weather { grid-column: 2; grid-row: 4; }
   #events { grid-column: 1/3; grid-row: 5; }
 
+  #banner { background-image: url("../images/arlington_downtown-700w.jpg"); }
+  #showcase { background-image: url("../images/3fingers-700w.jpg"); }
+  #join-now { background-image: url("../images/street_sign-700w.jpeg"); }
+  #events { background-image: url("../images/marysville-700w.jpeg"); }
+
   #banner h1 {
     font-size: 2rem;
     padding-left: 60px;

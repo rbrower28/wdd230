@@ -15,7 +15,7 @@
 <body>
   <header>
     <div id="nav-top">
-      <a href="index.html"><img id="logo" src="images/smokeypoint_logo.png" alt="Logo for the chamber of commerce" /></a>
+      <a href="index.html"><img id="logo" src="images/smokeypoint_logo.webp" alt="Logo for the chamber of commerce" /></a>
       <nav>
         <ul id="main-nav">
           <li><a href="index.html">Home</a></li>
@@ -23,8 +23,8 @@
           <li class="large"><a href="#">Events</a></li>
           <li class="large"><a href="#">Contact Us</a></li>
           <li class="large">
-            <a href="facebook.com" class="social"><img src="images/facebook.png" alt="the link to facebook" /></a>
-            <a href="instagram.com" class="social"><img src="images/instagram.png" alt="the link to instagram" /></a>
+            <a href="facebook.com" class="social"><img src="images/facebook.webp" alt="the link to facebook" /></a>
+            <a href="instagram.com" class="social"><img src="images/instagram.webp" alt="the link to instagram" /></a>
           </li>
           <li class="large" id="date"></li>
         </ul>
@@ -52,7 +52,19 @@
     </section>
 
     <section id="call-action">
-      <h2>a call to action</h2>
+    <picture>
+      <source srcset="./images/wdd230-org-600w.jpeg" media="(min-width: 500px) and (max-width: 799px)" >
+      <source srcset="./images/wdd230-org-800w.jpeg" media="(min-width: 800px)" >
+      <img src="./images/wdd230-org-400w.jpg" alt="people working at a table" />
+    </picture>
+      <!-- <img srcset="./images/wdd230-org-400w.jpeg,
+                    ./images/wdd230-org-600w.jpeg,
+                    ./images/wdd230-org-800w.jpeg"
+            sizes="(max-width: 400px) 400px,
+                    (max-width: 600px) 600px,
+                    800px"
+            src="./images/wdd230-org-800w.jpeg"
+            alt="people working at a table" /> -->
     </section>
 
     <section id="showcase">
@@ -111,7 +123,7 @@
 
     <section id="weather">
       <h2>It Is Currently...</h2>
-      <img id="w_img" src="./images/cloudy.png" alt="an icon indicating a cloudy day" />
+      <img id="w_img" src="./images/cloudy.webp" alt="an icon indicating a cloudy day" />
 
       <div class="temp">
         <span id="temp"></span>
@@ -134,7 +146,7 @@
 
   <footer>
     <div id="main-footer">
-      <img id="logo-footer" src="images/smokeypoint_logo.png" alt="Logo for the chamber of commerce" />
+      <img id="logo-footer" src="images/smokeypoint_logo.webp" alt="Logo for the chamber of commerce" />
       <div id="first-footer">
         <h3>Smokey Point Chamber of Commerce</h3>
         <p>123 State Ave NW</p>
@@ -153,6 +165,7 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script src="js/windchill.js"></script>
 </body>
 
 </html>
