@@ -38,7 +38,7 @@
   /* ----- MAIN STYLING ----- */
 
 
-  main {
+  #index {
     grid-template-columns: 2fr 3fr 2fr;
     grid-template-rows: 1fr 1fr auto;
   }
@@ -118,5 +118,21 @@
       width: 80%;
       margin: 1rem auto;
     }
-  
+
+
+    /* ----- DISCOVER PAGE STYLING ----- */
+
+    #discover {
+      padding-top: 2rem;
+    }
+
+    #discover h1 {
+      margin-left: 17rem;
+    }
+
+    .gallery:hover {
+      max-width: 800px;
+    }
+
+
   } /*end large */
