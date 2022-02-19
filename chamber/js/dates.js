@@ -9,45 +9,6 @@ document.getElementById("date").innerHTML = fullDate;
 document.getElementById("date2").innerHTML = fullDate;
 
 
-// hamburger menu
-
-function openMenu() {
-    document.getElementById("lower").classList.remove("hidden");
-    document.getElementById("lower-nav").classList.remove("hidden");
-    document.getElementById("date2").classList.remove("hidden");
-    document.getElementById("stack-bottom").classList.remove("hidden");
-    document.getElementById("stack-top").classList.add("hidden");
-};
-
-function closeMenu() {
-    document.getElementById("lower").classList.add("hidden");
-    document.getElementById("lower-nav").classList.add("hidden");
-    document.getElementById("date2").classList.add("hidden");
-    document.getElementById("stack-bottom").classList.add("hidden");
-    document.getElementById("stack-top").classList.remove("hidden");
-};
-
-const x = document.getElementById("stack-top");
-x.onclick = openMenu;
-
-const y = document.getElementById("stack-bottom");
-y.onclick = closeMenu;
-
-
-// weather
-
-const temp = 33;
-document.querySelector("#temp").textContent = temp;
-
-const conditions = "cloudy";
-document.querySelector("#conditions").textContent = conditions;
-
-const wind_speed = "15mph";
-const wind_chill = "N/A";
-document.querySelector("#w_speed").textContent = wind_speed;
-document.querySelector("#w_chill").textContent = wind_chill;
-
-
 // year and last modified displayed in footer
 
 let currentYear = new Date().getFullYear();
@@ -82,4 +43,3 @@ document.querySelector("#eventdate5").textContent = date5
 now.setDate(now.getDate() + 3);
 const date6 = `${now.getDate()} ${months[now.getMonth()]}`;
 document.querySelector("#eventdate6").textContent = date6
-
