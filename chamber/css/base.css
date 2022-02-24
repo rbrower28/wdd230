@@ -18,6 +18,7 @@
 html {
   background-color: whitesmoke;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
