@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Smokey Point Chamber of Commerce ~ Join</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content= "Apply for one of our membership packages today!" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css" />
+    <link rel="stylesheet" type="text/css" href="css/large.css" />
+  </head>
+
+<body>
+  <header>
+    <div id="nav-top">
+      <a href="index.html"><img id="logo" src="images/smokeypoint_logo.webp" alt="Logo for the chamber of commerce" /></a>
+      <nav>
+        <ul id="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="join.html">Join Now!</a></li>
+          <li class="large"><a href="discover.html">Discover</a></li>
+          <li class="large"><a href="#">Directory</a></li>
+          <li class="large">
+            <a href="https://www.facebook.com" class="social"><img src="images/facebook.webp" alt="the link to facebook" /></a>
+            <a href="https://www.instagram.com" class="social"><img src="images/instagram.webp" alt="the link to instagram" /></a>
+          </li>
+          <li class="large" id="date"></li>
+        </ul>
+        <button id="stack-top">&#9776;</button>
+      </nav>
+    </div>
+    <nav id="lower" class="hidden">
+      <ul id="lower-nav" class="hidden">
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li>
+          <a href="https://www.facebook.com" class="social"><img src="images/facebook.webp" alt="the link to facebook" /></a>
+          <a href="https://www.instagram.com" class="social"><img src="images/instagram.webp" alt="the link to instagram" /></a>
+        </li>
+      </ul>
+      <p id="date2" class="hidden"></p>
+      <button id="stack-bottom" class="hidden">x</button>
+    </nav>
+  </header>
+
+  <main id="joinpage">
+    <h1>Apply now to become a member!</h1>
+
+    <div class="membership">
+      <div id="nonprofit">
+        <h3>NP Membership<br>(Non Profit)</h3>
+        <hr>
+        <table class="benefits">
+          <caption>Only available for non profit organizations.</caption>
+          <tr>
+            <th scope="row">Cost /mo</th>
+            <td class="price">0<sup>$</sup></td>
+          </tr>
+          <tr>
+            <th scope="row">Chamber Access</th>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <th scope="row">Training</th>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <th scope="row">Advertising</th>
+            <td>&#10008;</td>
+          </tr>
+          <tr>
+            <th scope="row">Event Discounts</th>
+            <td>&#10008;</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="bronze">
+        <h3>Bronze Membership</h3>
+        <hr>
+        <table class="benefits">
+          <tr>
+            <th scope="row">Cost /mo</th>
+            <td class="price"><sup>$</sup>14.99</td>
+          </tr>
+          <tr>
+            <th scope="row">Chamber Access</th>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <th scope="row">Training</th>
+            <td>&#10008;</td>
+          </tr>
+          <tr>
+            <th scope="row">Advertising</th>
+            <td>&#10008;</td>
+          </tr>
+          <tr>
+            <th scope="row">Event Discounts</th>
+            <td>&#10008;</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="silver">
+        <h3>Silver Membership</h3>
+        <hr>
+        <table class="benefits">
+          <tr>
+            <th scope="row">Cost /mo</th>
+            <td class="price"><sup>$</sup>39.99</td>
+          </tr>
+          <tr>
+            <th scope="row">Chamber Access</th>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <th scope="row">Training</th>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <th scope="row">Advertising</th>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <th scope="row">Event Discounts</th>
+            <td>&#10008;</td>
+          </tr>
+        </table>
+      </div>
+      
+      <div id="gold">
+        <h3>Gold Membership</h3>
+        <hr>
+        <table class="benefits">
+          <tr>
+            <th scope="row">Cost /mo</th>
+            <td class="price"><sup>$</sup>59.99</td>
+          </tr>
+          <tr>
+            <th scope="row">Chamber Access</th>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <th scope="row">Training</th>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <th scope="row">Advertising</th>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <th scope="row">Event Discounts</th>
+            <td>&#10003;</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <form method="get" action="thankyou.html">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label class="top">First Name* <input type="text" name="fname" required></label>
+        <label class="top">Last Name* <input type="text" name="lname" required></label>
+        <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+        <label class="top">Phone* <input type="tel" name="phone" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>Business Information</legend>
+        <label class="top">Employment Position <input type="text" name="buspos" pattern="^[A-Za-z -]{7,}$"></label>
+        <label class="top">Business Name <input type="text" name="busname" required></label>
+
+        <div>Membership Level</div>
+        <label class="sbs"><input type="radio" name="audience" value="np"> NP Membership</label>
+        <label class="sbs"><input type="radio" name="audience" value="bronze"> Bronze Membership</label>
+        <label class="sbs"><input type="radio" name="audience" value="silver"> Silver Membership</label>
+        <label class="sbs"><input type="radio" name="audience" value="gold"> Gold Membership</label>
+
+        <label class="top" id="paragraph">Description of Business <input type="textarea" name="description"></label>
+        <label class="top"><input type="hidden" name="datetime"></label>
+      </fieldset>
+      <input type="submit" value="Join the Chamber" class="submitBtn">
+    </form>
+  </main>
+
+  <footer>
+    <div id="main-footer">
+      <img id="logo-footer" src="images/smokeypoint_logo.webp" alt="Logo for the chamber of commerce" />
+      <div id="first-footer">
+        <h3>Smokey Point Chamber of Commerce</h3>
+        <p>123 State Ave NW</p>
+        <p>Arlington, WA 98223</p>
+      </div>
+      <div id="second-footer">
+        <p>info@smokeyptcc.org</p>
+        <p>+1 (360) 555-6789</p>
+        <a href="#">Location Map</a>
+      </div>
+    </div>
+
+    <div id="base-footer">
+      <p>&copy;<span id="year"></span> Smokey Point Chamber | Ryan Brower | WDD230 Project | Last Updated: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+
+  <script src="js/dates.js"></script>
+  <script src="js/hamburger.js"></script>
+</body>
+
+</html>

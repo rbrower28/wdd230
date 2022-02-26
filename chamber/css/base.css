@@ -214,7 +214,6 @@ footer {
 }
 
 #base-footer {
-  width: 100%;
   padding: .5rem;
   background-color: var(--darkblue);
   text-align: center;
@@ -319,10 +318,18 @@ section h2 {
   transition: ease 0.1s;
 }
 
+.join a {
+  color: var(--darkblue);
+  text-decoration: none;
+}
+
 .join:hover {
-  color: var(--marigold);
   background-color: var(--darkblue);
   border: 4px solid var(--darkblue);
+}
+
+.join:hover a {
+  color: var(--marigold);
 }
 
 #banner {
@@ -602,4 +609,189 @@ section h2 {
 .last-visit p {
   color: whitesmoke;
   text-align: center;
+}
+
+
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+/* ----- ----- ----- ----- JOIN PAGE STYLING ----- ----- ----- ----- */
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+
+#joinpage {
+  margin-top: 7rem;
+}
+
+#joinpage h1 {
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px 10px;
+  border-left: 5px solid var(--darkblue);
+}
+
+.membership {
+  width: 90%;
+  margin: auto;
+  max-width: 378px;
+}
+
+.membership div {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 3px solid rgba(0,0,0,.8);
+  border-radius: 10px;
+}
+
+#nonprofit { background-color: green; }
+#bronze { background-color: rgb(153, 102, 35); }
+#silver { background-color: rgb(141, 137, 137); }
+#gold { background-color: goldenrod; }
+
+.membership h3 {
+  color: whitesmoke;
+  font-size: x-large;
+  text-align: center;
+  text-shadow: 0 0 10px black;
+  margin: .5rem 0 1rem;
+}
+
+.membership hr {
+  box-shadow: 0 0 15px black;
+}
+
+caption {
+  padding: .5rem;
+  font-size: 70%;
+  caption-side: bottom;
+}
+
+.benefits {
+  width: 100%;
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+
+.benefits th,
+.benefits td {
+  padding: 2px 5px;
+}
+
+.benefits th {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.benefits td {
+  font-size: 150%;
+  text-align: center;
+}
+
+.benefits td span {
+  font-size: 70%;
+  padding-bottom: 3px;
+}
+
+#joinpage form {
+  width: 90%;
+  max-width: 378px;
+  margin: auto;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 3px solid var(--darkblue);
+  border-radius: 10px;
+  padding: .5rem;
+}
+
+form legend {
+  color: var(--darkblue);
+  margin: 0 1rem;
+  padding: 0 .5rem;
+  font-size: 120%;
+}
+
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 90%;
+  max-width: 20rem;
+  background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: .75rem 0;
+  color: #555;
+}
+
+form input.submitBtn {
+  border: 2px solid var(--darkblue);
+  background-color: var(--darkblue);
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 86%;
+  max-width: 20rem;
+}
+
+form input.submitBtn:hover {
+  color: var(--darkblue);
+  background-color: white;
+}
+
+form label.top input:required {
+  border-left: 6px solid red;
+}
+
+form label.top input:required:valid {
+  border-left: 6px solid var(--blue);
+}
+
+
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+/* ----- ----- ----- ----- THANKYOU PAGE STYLING ----- ----- ----- ----- */
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+
+#thankyou div {
+  background-color: rgba(0,0,0,.1);
+  margin: 5rem auto;
+  padding: 3rem;
+  max-width: 460px;
+  text-align: center;
+}
+
+#thankyou div h1 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+#thankyou div a {
+  border: 1px solid var(--darkblue);
+  padding: .8rem 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+#thankyou div a:hover {
+  color: whitesmoke;
+  background-color: var(--darkblue);
+}
+
+#thankyou {
+  border-bottom: 2rem solid var(--darkblue);
 }
