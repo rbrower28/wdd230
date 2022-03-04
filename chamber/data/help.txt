@@ -1,0 +1,13 @@
+Example:
+
+
+
+
+
+Needs:
+names
+addresses
+phones
+websites
+image or icon file names
+and other information
