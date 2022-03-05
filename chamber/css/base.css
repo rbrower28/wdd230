@@ -333,7 +333,7 @@ section h2 {
 }
 
 #banner {
-  background-image: url("../images/arlington_downtown-400w.jpg");
+  background-image: url("../images/index/arlington_downtown-400w.jpg");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -441,7 +441,7 @@ section h2 {
 /* ----- JOIN-NOW SECTION ----- */
 
 #join-now {
-  background-image: url("../images/street_sign-400w.jpeg");
+  background-image: url("../images/index/street_sign-400w.jpeg");
   background-size: cover;
   background-position: center;
   min-height: 300px;
@@ -794,4 +794,86 @@ form label.top input:required:valid {
 
 #thankyou {
   border-bottom: 2rem solid var(--darkblue);
+}
+
+
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+/* ----- ----- ----- ----- DIRECTORY PAGE STYLING ----- ----- ----- ----- */
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+
+.directoryTitle {
+  max-width: 300px;
+  margin: 7rem 6vw 2rem;
+  padding: 1rem;
+  text-align: center;
+  border-left: 6px solid var(--darkblue);
+
+}
+
+.buttons {
+  width: 150px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons button {
+  background-color: var(--darkblue);
+  border: 1px solid var(--darkblue);
+  color: inherit;
+  margin: .5rem 1rem;
+  padding: .5rem;
+  font: inherit;
+  outline: inherit;
+}
+
+.buttons button:hover,
+.buttons button:active {
+  background-color: var(--peach);
+}
+
+.button button img {
+  width: 100px;
+  margin: 0;
+}
+
+.cards {
+  width: 90%;
+  max-width: 750px;
+  padding: 1.5rem;
+  margin: auto 2vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 5px;
+}
+
+.cards section {
+  background-color: whitesmoke;
+  border: 2px solid var(--peach);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 30px #999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards h2 {
+  margin-bottom: .5rem;
+}
+
+.cards img {
+  width: 100%;
+  max-width: 150px;
+  margin: 1rem auto 2rem;
+}
+
+.cards p {
+  margin: 0;
+}
+
+.cards a {
+  width: 90%;
+  word-wrap: break-word;
 }

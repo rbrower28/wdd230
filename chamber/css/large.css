@@ -96,7 +96,7 @@
   #join-now {
     grid-column: 2;
     grid-row: 3;
-    background-image: url("../images/street_sign-1000w.jpg");
+    background-image: url("../images/index/street_sign-1000w.jpg");
   }
 
   #weather {
@@ -141,5 +141,23 @@
     #joinpage {
       width: 80%;
     }
+
+
+    /* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+    /* ----- ----- ----- ----- DIRECTORY PAGE STYLING ----- ----- ----- ----- */
+    /* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+
+    .cards {
+      max-width: 1000px;
+    }
+
+    .directoryTitle {
+      margin-top: 5rem;
+    }
+
+    .buttons {
+      display: none;
+    }
+
 
   } /*end large */
