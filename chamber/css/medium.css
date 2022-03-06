@@ -183,6 +183,16 @@
 
   .cards {
     margin: auto;
+    padding: 1.5rem;
+  }
+
+  .list {
+    padding: 0;
+  }
+
+  .list section{
+    flex-direction: row;
+    gap: 10px;
   }
 
 

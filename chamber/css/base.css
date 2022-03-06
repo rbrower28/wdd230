@@ -841,8 +841,8 @@ form label.top input:required:valid {
 .cards {
   width: 90%;
   max-width: 750px;
-  padding: 1.5rem;
-  margin: auto 2vw;
+  padding: 0;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 5px;
@@ -874,6 +874,31 @@ form label.top input:required:valid {
 }
 
 .cards a {
-  width: 90%;
+  max-width: 100%;
   word-wrap: break-word;
+}
+
+.list {
+  grid-template-columns: 1fr;
+  gap: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 75%;
+}
+
+.list section {
+  flex-direction: column;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+}
+
+.list section:nth-child(odd) {
+  background-color: #ccc;
+}
+
+.list img {
+  display: none;
 }

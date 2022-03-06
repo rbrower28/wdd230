@@ -112,52 +112,78 @@
 
 
 
-    /* ----- FOOTER STYLING ----- */
+  /* ----- FOOTER STYLING ----- */
 
-    #main-footer {
-      width: 80%;
-      margin: 1rem auto;
-    }
-
-
-    /* ----- DISCOVER PAGE STYLING ----- */
-
-    #discover {
-      padding-top: 2rem;
-    }
-
-    #discover h1 {
-      margin-left: 17rem;
-    }
-
-    .gallery:hover {
-      max-width: 800px;
-    }
-
-    /* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
-    /* ----- ----- ----- ----- JOIN PAGE STYLING ----- ----- ----- ----- */
-    /* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
-
-    #joinpage {
-      width: 80%;
-    }
+  #main-footer {
+    width: 80%;
+    margin: 1rem auto;
+  }
 
 
-    /* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
-    /* ----- ----- ----- ----- DIRECTORY PAGE STYLING ----- ----- ----- ----- */
-    /* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+  /* ----- DISCOVER PAGE STYLING ----- */
 
-    .cards {
-      max-width: 1000px;
-    }
+  #discover {
+    padding-top: 2rem;
+  }
 
-    .directoryTitle {
-      margin-top: 5rem;
-    }
+  #discover h1 {
+    margin-left: 17rem;
+  }
 
-    .buttons {
-      display: none;
-    }
+  .gallery:hover {
+    max-width: 800px;
+  }
+
+  /* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+  /* ----- ----- ----- ----- JOIN PAGE STYLING ----- ----- ----- ----- */
+  /* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+
+  #joinpage {
+    width: 80%;
+  }
 
 
-  } /*end large */
+  /* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+  /* ----- ----- ----- ----- DIRECTORY PAGE STYLING ----- ----- ----- ----- */
+  /* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+
+  .cards {
+    max-width: 1000px;
+  }
+
+  .directoryTitle {
+    margin-top: 5rem;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px;
+    width: 90%;
+    padding: 1.5rem;
+    font-size: 100%;
+  }
+
+  .list section {
+    flex-direction: column;
+    box-shadow: 0 0 30px #999;
+    background-color: whitesmoke;
+    border: 2px solid var(--peach);
+    padding: 1rem;
+    margin: 5px;
+    border-radius: 1rem;
+  }
+
+  .list img {
+    display: block;
+  }
+
+  .list section:nth-child(odd) {
+    background-color: whitesmoke;
+  }
+
+
+} /*end large */
