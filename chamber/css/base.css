@@ -25,7 +25,7 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h5, h6, a, button, .heading {
+h1, h2, h3, h5, h6, a, button, .heading, li {
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -718,7 +718,7 @@ form label.top, form div {
   font-size: .8rem;
 }
 
-form label.top input, form label.top select {
+form label.top input, form label.top textarea, form label.top select {
   -webkit-appearance: none;
   display: block;
   font-size: 1rem;
@@ -754,11 +754,11 @@ form input.submitBtn:hover {
 }
 
 form label.top input:required {
-  border-left: 6px solid red;
+  border-bottom: 3px solid rgba(255, 0, 0, 0.5);
 }
 
 form label.top input:required:valid {
-  border-left: 6px solid var(--blue);
+  border-bottom: 3px solid var(rgba(0, 128, 0, 0.5));
 }
 
 
@@ -803,7 +803,7 @@ form label.top input:required:valid {
 /* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
 
 .directoryTitle {
-  max-width: 300px;
+  max-width: 350px;
   margin: 7rem 6vw 2rem;
   padding: 1rem;
   text-align: center;
@@ -851,7 +851,7 @@ form label.top input:required:valid {
 .cards section {
   background-color: whitesmoke;
   border: 2px solid var(--peach);
-  padding: 1rem;
+  padding: 1rem 0;
   text-align: center;
   box-shadow: 0 0 30px #999;
   display: flex;
@@ -888,6 +888,8 @@ form label.top input:required:valid {
 }
 
 .list section {
+  width: 100%;
+  justify-content: space-around;
   flex-direction: column;
   border: none;
   border-radius: 0;
@@ -901,4 +903,69 @@ form label.top input:required:valid {
 
 .list img {
   display: none;
+}
+
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+/* ----- ----- ----- ----- CONTACT PAGE STYLING ----- ----- ----- ----- */
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+
+.contactHolder {
+  display: block;
+  margin: 4rem auto;
+  width: 80%;
+}
+
+.contactHolder p,
+.contactHolder li {
+  color: white;
+  text-align: center;
+}
+
+.contactHolder ul {
+  padding: 0;
+}
+
+.contactHolder li {
+  list-style-type: none;
+  font-family: 'Heebo', sans-serif;
+}
+
+.contactForm {
+  background-color: whitesmoke;
+  border: 3px solid var(--darkblue);
+}
+
+.contactForm form {
+  border: none;
+  max-width: none;
+  margin: auto;
+}
+
+.contactForm form input {
+  width: 100%;
+}
+
+.contactForm label {
+  text-align: center;
+}
+
+.contactForm form label.top input {
+  max-width: none;
+}
+
+.contactForm input.submitBtn {
+  position: relative;
+  width: 80%;
+  margin: 2rem 10%;
+  max-width: none;
+}
+
+#inquiry {
+  height: 150px;
+}
+
+textarea {
+  width: 100%;
+  margin: auto;
 }

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <title>Smokey Point Chamber of Commerce ~ Home</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content= "Homepage for the Smokey Point Chamber of Commerce, and home to all links and vital information pertaining to the organization." />
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" type="text/css" href="css/medium.css" />
-  <link rel="stylesheet" type="text/css" href="css/large.css" />
-</head>
+  <head>
+    <title>Smokey Point Chamber of Commerce ~ Contact Us</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content= "Contact page for the Smokey Point Chamber of Commerce." />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css" />
+    <link rel="stylesheet" type="text/css" href="css/large.css" />
+  </head>
 
 <body>
   <header>
@@ -48,12 +48,34 @@
   </header>
 
   <main>
-    <h1 class="directoryTitle">Business Directory</h1>
-    <div class="buttons">
-      <button id="gridView"><img src="images/icons/grid-layout-button-dark.svg" alt="Grid View Layout Button"></button>
-      <button id="listView"><img src="images/icons/table-layout-button-dark.svg" alt="List View Layout Button"></button>
+    <h1 class="directoryTitle">Get in contact with us!</h1>
+    <div class="contactHolder">
+      <section class="contactInfo">
+        <h3>Smokey Point Chamber of Commerce</h3>
+        <p>123 State Ave NW</p>
+        <p>Arlington, WA 98223</p>
+        <p>info@smokeyptcc.org</p>
+        <p>+1 (360) 555-6789</p>
+        <h3>Hours:</h3>
+        <ul>
+          <li>Mon - 10:00 to 6:00</li>
+          <li>Tue - 10:00 to 6:00</li>
+          <li>Wed - 10:00 to 6:00</li>
+          <li>Thur - 10:00 to 6:00</li>
+          <li>Fri - 10:00 to 6:00</li>
+          <li>Sat - 10:00 to 2:00</li>
+          <li>Sun - Closed</li>
+        </ul>
+      </section>
+      <section class="contactForm">
+        <form method="get" action="thankyou.html">
+          <label class="top">First and Last Name* <input type="text" name="fname" required></label>
+          <label class="top">Email* <input type="email" name="email" required></label>
+          <label class="top">Inquiry<textarea name="inquiry" id="inquiry"></textarea></label>
+          <input type="submit" value="Send" class="submitBtn" id="submit">
+        </form>
+      </section>
     </div>
-    <div id="cards" class="cards"></div>
   </main>
 
   <footer>
@@ -67,7 +89,7 @@
       <div id="second-footer">
         <p>info@smokeyptcc.org</p>
         <p>+1 (360) 555-6789</p>
-        <a href="#">Location Map</a>
+        <p>Weather: <a href="https://openweathermap.org/">OpenWeatherMap.org</a></p>
       </div>
     </div>
 
@@ -78,8 +100,6 @@
 
   <script src="js/dates.js"></script>
   <script src="js/hamburger.js"></script>
-  <script src="js/directory.js"></script>
-  <script src="js/viewchange.js"></script>
 </body>
 
 </html>
