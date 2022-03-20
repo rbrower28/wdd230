@@ -151,7 +151,6 @@ nav ul li a {
   grid-column: 1;
   margin: 0;
   padding: 7px 7px 0;
-
 }
 
 #lower-nav li {
@@ -318,17 +317,14 @@ section h2 {
   transition: ease 0.1s;
 }
 
-.join a {
+a.join {
   color: var(--darkblue);
   text-decoration: none;
 }
 
-.join:hover {
+a.join:hover {
   background-color: var(--darkblue);
   border: 4px solid var(--darkblue);
-}
-
-.join:hover a {
   color: var(--marigold);
 }
 
@@ -719,7 +715,6 @@ form label.top, form div {
 }
 
 form label.top input, form label.top textarea, form label.top select {
-  -webkit-appearance: none;
   display: block;
   font-size: 1rem;
   border: 1px solid #999;
@@ -758,7 +753,7 @@ form label.top input:required {
 }
 
 form label.top input:required:valid {
-  border-bottom: 3px solid var(rgba(0, 128, 0, 0.5));
+  border-bottom: 3px solid rgba(0, 128, 0, 0.5);
 }
 
 
