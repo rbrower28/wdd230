@@ -1,0 +1,128 @@
+/* ------------- General Styling ------------- */
+
+html {
+  background-color: #ccc;
+}
+
+body {
+  background-color: whitesmoke;
+  max-width: 32rem;
+  padding: 3rem;
+  margin: 1rem auto;
+}
+
+h1, h3, h5 {
+  padding-top: 1rem;
+  /* font-family */
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  border-bottom: 1px solid black;
+}
+
+p, a, span {
+  margin: 0;
+  /* font-family */
+}
+
+div.color {
+  padding: 1rem;
+  display: inline;
+  border: 1px solid black;
+}
+
+/* ------------- Site Map Styling ------------- */
+
+.sitemap {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(8, 10%);
+  grid-template-rows: 3em 1.5em 1.5em 3em 1.5rem 1.5rem 3rem;
+  grid-template-areas:
+    ". . . home home . . ."
+    ". . . . top . . ."
+    ". left left left bottom right right ."
+    "page2 page2 . page3 page3 . page4 page4"
+    ". . . . top2 . . ."
+    ". . left2 left2 right2 right2 . ."
+    ". page5 page5 . . page6 page6 .";
+}
+.sitemap > div {
+  text-align: center;
+}
+.sm-home {
+  grid-area: home;
+  background-color: #999;
+  line-height: 3em;
+}
+.sm-page2 {
+  grid-area: page2;
+  background-color: #999;
+  line-height: 3em;
+}
+.sm-page3 {
+  grid-area: page3;
+  background-color: #999;
+  line-height: 3em;
+}
+.sm-page4 {
+  grid-area: page4;
+  background-color: #999;
+  line-height: 3em;
+}
+.sm-page5 {
+  grid-area: page5;
+  background-color: #999;
+  line-height: 3em;
+}
+.sm-page6 {
+  grid-area: page6;
+  background-color: #999;
+  line-height: 3em;
+}
+
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+
+.bottom {
+  grid-area: bottom;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.top2 {
+  grid-area: top2;
+  border-left: 1px solid;
+}
+
+.left2 {
+  grid-area: left2;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.right2 {
+  grid-area: right2;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
