@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Temple Inn & Suites - Reservations</title>
+  <title>Temple Inn & Suites - Temples</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,6 +28,12 @@
       <a href="temples.html">Temples</a>
     </div>
 
+    <form method="get" action="reservation.html">
+      <label class="form-date">Start Date: <input type="date" name="st_date" /></label>
+      <label class="form-date">End Date: <input type="date" name="end_date" /></label>
+      <label class="form-smaller">Party Size: <input type="number" name="party_size" min="1" max="50"></label>
+      <input class="form-send" type="submit" value="Check Availability">
+    </form>
   </header>
 
   <main>

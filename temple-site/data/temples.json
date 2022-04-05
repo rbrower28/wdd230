@@ -1,0 +1,36 @@
+{
+  "temples": [
+    {
+      "location": "Seattle WA",
+      "dedication": "17 November 1980",
+      "dedicatedBy": "Spencer W. Kimball",
+      "numDedicated": "19th",
+      "didYouKnow": "This is one of only five temples where angel Moroni is holding the gold plates.",
+      "imgUrl": "https://rbrower28.github.io/wdd230/temple-site/images/temples/seattle-temple.jpg"
+    },
+    {
+      "location": "Redlands CA",
+      "dedication": "1 December 2001",
+      "dedicatedBy": "Dieter F. Uchtdorf",
+      "numDedicated": "116th",
+      "didYouKnow": "The site for this temple was designated back at the church colony founded there in 1851.",
+      "imgUrl": "https://rbrower28.github.io/wdd230/temple-site/images/temples/redlands-temple.jpg"
+    },
+    {
+      "location": "Buenos Aires ARG",
+      "dedication": "19 January 1986",
+      "dedicatedBy": "Thomas S. Monson",
+      "numDedicated": "39th",
+      "didYouKnow": "This is the first temple built in Argentina. over 29,000 people attended it's 8 day open house.",
+      "imgUrl": "https://rbrower28.github.io/wdd230/temple-site/images/temples/buenos-aires-temple.jpg"
+    },
+    {
+      "location": "Provo UT",
+      "dedication": "9 February 1972",
+      "dedicatedBy": "Joseph Fielding Smith",
+      "numDedicated": "15th",
+      "didYouKnow": "Even though Joseph Fielding Smith wrote the dedicatory prayer, he asked Harold B. Lee to give it for him.",
+      "imgUrl": "https://rbrower28.github.io/wdd230/temple-site/images/temples/provo-temple.jpg"
+    }
+  ]
+}

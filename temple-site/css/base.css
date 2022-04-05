@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Playfair+Display:wght@400&display=swap');
+
+:root {
+  /* Colors */
+  --orange: #ffac81;
+  --pink: #ff928b;
+  --peach: #fec3a6;
+  --yellow: #efe9ae;
+  --green: #cdeac0;
+}
+
+.orange { background-color: var(--orange); }
+.pink { background-color: var(--pink); }
+.peach { background-color: var(--peach); }
+.yellow { background-color: var(--yellow); }
+.green { background-color: var(--green); }
+
+
+/* ============= GENERAL STYLING ============= */
+
+html {
+  background-color: whitesmoke;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+p, a, span, label, li {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1, h2 {
+  width: 90%;
+  padding: .5rem;
+  border-bottom: 2px solid black;
+  margin: 2rem auto;
+}
+
+section, h1, h2 {
+  max-width: 50rem;
+}
+
+section {
+  margin: 5rem auto;
+}
+
+section.thin {
+  margin: 2rem auto;
+}
+
+.background {
+  padding: 2rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* ============= HEADER STYLING ============= */
+
+.header {
+  padding: 1rem 2rem 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--yellow);
+}
+
+header img,
+.contact img {
+  max-height: 7rem;
+}
+
+header a {
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+header a:hover{
+  background-color: var(--pink);
+}
+
+header h2,
+.contact h2 {
+  border: none;
+  font-size: 250%;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+header h3,
+.contact h3 {
+  font-size: 180%;
+  margin: 0;
+  width: 100%;
+}
+
+header form {
+  width: 100%;
+  max-width: 53rem;
+  margin: -10px auto 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 225px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 105%;
+  padding: 5px;
+  margin: 0 auto 1rem;
+}
+
+.form-date input {
+  width: 130px;
+}
+
+.form-smaller {
+  width: 140px;
+}
+
+.form-smaller input {
+  width: 40px;
+}
+
+.form-send {
+  width: 150px;
+  margin: 0 auto 1rem;
+  padding: 9px;
+  background-color: var(--green);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.form-send:hover {
+  background-color: var(--pink);
+}
+
+
+/* ============= BODY STYLING ============= */
+
+.grid-3 div {
+  border: 1px solid black;
+  min-height: 150px;
+}
+
+main a {
+  padding: .5rem 1rem;
+  border: 2px solid var(--pink);
+  background-color: var(--yellow);
+  border-radius: 15px;
+}
+
+main a:hover {
+  background-color: var(--pink);
+}
+
+#redlands {
+  background-image: url("../images/index/redlands.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.first h4 {
+  width: 200px;
+  float: right;
+  font-size: 150%;
+  margin: 1rem;
+}
+
+.first a {
+  margin: 0 3rem 1rem 1rem;
+  float: right;
+}
+
+.first p {
+  color: white;
+  margin-right: 1rem;
+}
+
+#visitors-center {
+  background-image: url("../images/index/visitors-center.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#make-res {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--green);
+}
+
+#make-res h3 {
+  margin: 1rem 0 0;
+  font-size: 150%;
+}
+
+#make-res a {
+  margin-bottom: 1rem;
+}
+
+.grid-2 div {
+  max-width: 400px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-2 p {
+  text-align: center;
+}
+
+.grid-2 ul {
+  margin-right: 2rem;
+}
+
+.grid-2 a {
+  float: center;
+  margin: 1rem;
+}
+
+.grid-2 img {
+  display: none;
+}
+
+#temple-desc {
+  background-image: url("../images/temples/seattle-temple.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#temple-desc div {
+  background-color: whitesmoke;
+  border: 1px solid black;
+  margin: 1rem;
+  max-width: 200px;
+  padding: 1rem;
+}
+
+#temple-desc .caption {
+  margin: 1rem;
+  color: white;
+}
+
+/* ============= WEATHER STYLING ============= */
+
+#current-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+#current-weather p {
+  text-align: end;
+  margin: 1rem;
+}
+
+#current-weather h5 {
+  font-size: 200%;
+  text-align: start;
+  margin: 1rem;
+}
+
+.daily-temps div {
+  background-color: var(--peach);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.daily-temps h3 {
+  font-size: 200%;
+  margin: 1rem;
+}
+
+.daily-temps h5 {
+  font-size: 200%;
+  margin: 1rem;
+}
+
+
+/* ============= FOOTER STYLING ============= */
+
+.social {
+  display: flex;
+  flex-direction: column;
+  font-size: 150%;
+}
+
+.social1 {
+  margin: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.social2 {
+  justify-content: center;
+}
+
+.social3 {
+  justify-content: flex-end;
+}
+
+.social div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.social h4,
+.social img,
+.social a {
+  margin: 1rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: var(--yellow);
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}

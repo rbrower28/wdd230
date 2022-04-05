@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Temple Inn & Suites - Home</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content= "Homepage for the hotel chain Temple Inn & Suites." />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/medium.css" />
+  <link rel="stylesheet" type="text/css" href="css/large.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <img class="logo-box" src="images/icons/temple_logo.png" alt="Image logo" />
+      <div>
+        <h2>Temple</h2>
+        <h3>Inn & Suites</h3>
+      </div>
+      <a href="index.html">Home</a>
+      <a href="reservation.html">Reservations</a>
+      <a href="services.html">Services</a>
+      <a href="temples.html">Temples</a>
+    </div>
+
+    <form method="get" action="reservation.html">
+      <label class="form-date">Start Date: <input type="date" name="st_date" /></label>
+      <label class="form-date">End Date: <input type="date" name="end_date" /></label>
+      <label class="form-smaller">Party Size: <input type="number" name="party_size" min="1" max="50"></label>
+      <input class="form-send" type="submit" value="Check Availability">
+    </form>
+  </header>
+
+  <main>
+    <h1>Making temple trips a breeze since 1980</h1>
+
+    <section class="grid-3">
+      <div class="first" id="redlands">
+        <h4>Choose from our many supported temples</h4>
+        <a href="temples.html">See Selection</a>
+        <p class="caption">(Redlands, CA)</p>
+      </div>
+      <div class="second" id="visitors-center"></div>
+      <div class="third" id="make-res">
+        <h3>Make a Reservation</h3>
+        <a href="reservation.html">Go</a>
+      </div>
+    </section>
+
+    <div class="background orange">
+      <h2>What about...? <strong>We got that covered too.</strong></h2>
+      <section class="grid-2 thin">
+        <img src="images/index/shuttle.jpg" alt="Temple shuttles">
+        <div>
+          <p>Our extensive list of amenities and services will take care of any concerns you might have. Some of these include:</p>
+          <ul>
+            <li>Temple shuttle</li>
+            <li>Low cost nursery</li>
+            <li>High-speed WiFi</li>
+            <li>And much more!</li>
+          </ul>
+          <a href="services.html">Learn More</a>
+        </div>
+      </section>
+    </div>
+
+    <h2>Meet your temple: Seattle, WA</h2>
+    <section id="temple-desc">
+      <div>
+        <p>The Seattle Temple was the 19th temple dedicated in the church.<br>The dedication was done on 17 November 1980 by Spencer W. Kimball.<br>This is one of only five temples built where angel Moroni is holding a set of the gold plates.</p>
+      </div>
+      <p class="caption">(Seattle, WA)</p>
+    </section>
+
+    <h2>Whether we go, <strong>Weather</strong> we don't...</h2>
+    <div class="background green">
+      <section class="thin" id="current-weather">
+        <p>It is currently</p>
+        <h5><span id="c-temp"></span>&#176;F</h5>
+        <p>and</p>
+        <h5 id="c-condition"></h5>
+        <p>in</p>
+        <h5 id="c-location"></h5>
+      </section>
+    </div>
+
+    <h2>3 Day Forecast</h2>
+    <section class="grid-3 daily-temps">
+      <div class="first">
+        <h3 id="today"></h3>
+        <h5><span id="today-temp"></span>&#176;F</h5>
+      </div>
+      <div class="second">
+        <h3 id="tomorrow"></h3>
+        <h5><span id="tomorrow-temp"></span>&#176;F</h5>
+      </div>
+      <div class="third">
+        <h3 id="next-day"></h3>
+        <h5><span id="next-day-temp"></span>&#176;F</h5>
+      </div>
+    </section>
+
+    <div class="pink">
+      <section class="social">
+        <h3 class="social1">Find us on social media</h3>
+        <div class="social2">
+          <h4>Facebook</h4>
+          <img src="#" alt="Facebook logo">
+          <a href="https://www.facebook.com">www.facebook.com/templeinn</a>
+        </div>
+        <div class="social3">
+          <h4>Linkedin</h4>
+          <img src="#" alt="Linkedin logo">
+          <a href="https://www.linkedin.com">www.linkedin.com/templeinn</a>
+        </div>
+      </section>
+    </div>
+
+    <h2>Contact Us!</h2>
+    <section class="contact">
+      <div class="logo">
+        <img class="logo-box" src="images/icons/temple_logo.png" alt="Image logo" />
+        <div>
+          <h2>Temple</h2>
+          <h3>Inn & Suites</h3>
+        </div>
+      </div>
+      <div>
+        <!-- contact information -->
+      </div>
+      <div>
+        <!-- google maps embed -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy;2022 Temple Inn & Suites</p>
+    <p>Last visited: <span id="last-visited"><!-- last visited here --></span></p>
+    <p>Last Modified: <span id="last-modified"><!-- last modified here --></span></p>
+  </footer>
+
+  <script src="js/weather.js"></script>
+  <script src="js/visits.js"></script>
+</body>
+
+</html>
