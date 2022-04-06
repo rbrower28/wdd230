@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-  <title>Temple Inn & Suites - Services</title>
+  <title>Thank you!</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content= "Homepage for the hotel chain Temple Inn & Suites." />
+  <meta name="description" content= "Thank you page for the hotel chain Temple Inn & Suites." />
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/base.css">
@@ -27,16 +27,13 @@
       <a href="services.html">Services</a>
       <a href="temples.html">Temples</a>
     </div>
-
-    <form method="get" action="reservation.html">
-      <label class="form-date">Start Date: <input type="date" name="st_date"></label>
-      <label class="form-date">End Date: <input type="date" name="end_date"></label>
-      <label class="form-smaller"># Rooms: <input type="number" name="rooms" min="1" max="15"></label>
-      <input class="form-send" type="submit" value="Check Availability">
-    </form>
   </header>
 
   <main>
+      <section class="thanks">
+        <h1>Thank you<span id="user-name"></span>!</h1>
+        <p>Your reservation has been made.</p>
+      </section>
 
     <h2 class="low">Contact Us!</h2>
     <section class="contact thin">
@@ -75,8 +72,8 @@
     <p>Last Modified: <em><span id="last-modified"></span></em></p>
   </footer>
 
-  <script src="js/weather.js"></script>
   <script src="js/visits.js"></script>
+  <script src="js/thankyou.js"></script>
 </body>
 
 </html>

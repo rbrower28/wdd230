@@ -29,9 +29,9 @@
     </div>
 
     <form method="get" action="reservation.html">
-      <label class="form-date">Start Date: <input type="date" name="st_date" /></label>
-      <label class="form-date">End Date: <input type="date" name="end_date" /></label>
-      <label class="form-smaller">Party Size: <input type="number" name="party_size" min="1" max="50"></label>
+      <label class="form-date">Start Date: <input type="date" name="st_date"></label>
+      <label class="form-date">End Date: <input type="date" name="end_date"></label>
+      <label class="form-smaller"># Rooms: <input type="number" name="rooms" min="1" max="15"></label>
       <input class="form-send" type="submit" value="Check Availability">
     </form>
   </header>
@@ -42,13 +42,13 @@
     <section class="grid-3">
       <div class="first" id="redlands">
         <h4>Choose from our many supported temples</h4>
-        <a href="temples.html">See Selection</a>
+        <a class="link" href="temples.html">See Selection</a>
         <p class="caption">(Redlands, CA)</p>
       </div>
       <div class="second" id="visitors-center"></div>
       <div class="third" id="make-res">
         <h3>Make a Reservation</h3>
-        <a href="reservation.html">Go</a>
+        <a class="link" href="reservation.html">Go</a>
       </div>
     </section>
 
@@ -64,12 +64,12 @@
             <li>High-speed WiFi</li>
             <li>And much more!</li>
           </ul>
-          <a href="services.html">Learn More</a>
+          <a class="link" href="services.html">Learn More</a>
         </div>
       </section>
     </div>
 
-    <h2>Meet your temple: Seattle, WA</h2>
+    <h2 class="low">Meet your temple: Seattle, WA</h2>
     <section id="temple-desc">
       <div>
         <p>The Seattle Temple was the 19th temple dedicated in the church.<br>The dedication was done on 17 November 1980 by Spencer W. Kimball.<br>This is one of only five temples built where angel Moroni is holding a set of the gold plates.</p>
@@ -89,7 +89,7 @@
       </section>
     </div>
 
-    <h2>3 Day Forecast</h2>
+    <h2 class="low">3 Day Forecast</h2>
     <section class="grid-3 daily-temps">
       <div class="first">
         <h3 id="today"></h3>
@@ -105,36 +105,48 @@
       </div>
     </section>
 
-    <div class="pink">
-      <section class="social">
+    <div class="orange thick">
+      <section class="social thin">
         <h3 class="social1">Find us on social media</h3>
-        <div class="social2">
+        <a href="https://www.facebook.com" class="social2">
           <h4>Facebook</h4>
-          <img src="#" alt="Facebook logo">
-          <a href="https://www.facebook.com">www.facebook.com/templeinn</a>
-        </div>
-        <div class="social3">
+          <img src="images/icons/fb-logo.png" alt="Facebook logo">
+          <p>www.facebook.com/templeinn</p>
+        </a>
+        <a href="https://www.linkedin.com" class="social3">
           <h4>Linkedin</h4>
-          <img src="#" alt="Linkedin logo">
-          <a href="https://www.linkedin.com">www.linkedin.com/templeinn</a>
-        </div>
+          <img src="images/icons/lk-logo.png" alt="Linkedin logo">
+          <p>www.linkedin.com/templeinn</p>
+        </a>
       </section>
     </div>
 
-    <h2>Contact Us!</h2>
-    <section class="contact">
-      <div class="logo">
-        <img class="logo-box" src="images/icons/temple_logo.png" alt="Image logo" />
-        <div>
-          <h2>Temple</h2>
-          <h3>Inn & Suites</h3>
+    <h2 class="low">Contact Us!</h2>
+    <section class="contact thin">
+      <div>
+        <div class="logo">
+          <img class="logo-box" src="images/icons/temple_logo.png" alt="Image logo" />
+          <div>
+            <h2>Temple</h2>
+            <h3>Inn & Suites</h3>
+          </div>
         </div>
+        <address class="info">
+          <a href="tel:+12345559876">+1 (234) 555-9876</a>
+          <a href="mailto:inquiries@templeinn.com">inquiries@templeinn.com</a>
+          <p><strong>Hours:</strong></p>
+          <p>Weekdays: 9am to 1am</p>
+          <p>Fri-Sun: 24hrs</p>
+        </address>
       </div>
-      <div>
-        <!-- contact information -->
-      </div>
-      <div>
-        <!-- google maps embed -->
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=4800%20Montgomery%20Ln&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+          <a href="https://www.whatismyip-address.com"></a>
+          <br>
+          <a href="https://www.embedgooglemap.net">how to add a google map to html</a>
+        </div>
       </div>
     </section>
 
@@ -142,8 +154,8 @@
 
   <footer>
     <p>&copy;2022 Temple Inn & Suites</p>
-    <p>Last visited: <span id="last-visited"><!-- last visited here --></span></p>
-    <p>Last Modified: <span id="last-modified"><!-- last modified here --></span></p>
+    <p>Last visited: <em><span id="last-visited"></span></em></p>
+    <p>Last Modified: <em><span id="last-modified"></span></em></p>
   </footer>
 
   <script src="js/weather.js"></script>

@@ -31,12 +31,150 @@
   </header>
 
   <main>
+    <div class="res-back">
+      <h1>Make a reservation today!</h1>
+      <section class="res-form">
+        <form method="get" action="thankyou.html">
+
+          <hr>
+          
+          <h3>First, select a temple.</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="temple" value="Seattle" required>
+              <span>Seattle, WA</span>
+            </label>
+            <label>
+              <input type="radio" name="temple" value="Redlands">
+              <span>Redlands, CA</span>
+            </label>
+            <label>
+              <input type="radio" name="temple" value="Buenos Aires">
+              <span>Buenos Aires, ARG</span>
+            </label>
+            <label>
+              <input type="radio" name="temple" value="Provo">
+              <span>Provo, UT</span>
+            </label>
+          </div>
+
+          <hr>
+
+          
+          <h3>Then select the dates of your stay.</h3>
+          <div class="dates">
+            <label>
+              <span>Start Date:</span>
+              <input id="st-date" type="date" name="st_date" required>
+              <img class="dates-check" src="images/icons/check.png" alt="check mark">
+            </label>
+            <label>
+              <span>End Date:</span>
+              <input id="end-date" type="date" name="end_date" required>
+              <img class="dates-check" src="images/icons/check.png" alt="check mark">
+            </label>
+          </div>
+
+          <hr>
+
+          <h3>How many rooms do you want?</h3>
+          <div class="party">
+            <label>
+              <input id="num-rooms" class="party-input" type="number" name="party_size" min="1" max="15" required>
+              <img class="party-check" src="images/icons/check.png" alt="check mark">
+            </label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="room-size" value="Single" required>
+                <span>Single</span>
+              </label>
+              <label>
+                <input type="radio" name="room-size" value="Double">
+                <span>Double</span>
+              </label>
+            </div>
+          </div>
+
+          <hr>
+
+          <h3>Please enter the following information:</h3>
+          <div class="user-info">
+            <label>
+              <span>First name:</span>
+              <input type="text" name="fname" required>
+              <img class="party-check" src="images/icons/check.png" alt="check mark">
+            </label>
+            <label>
+              <span>Last name:</span>
+              <input type="text" name="lname" required>
+              <img class="party-check" src="images/icons/check.png" alt="check mark">
+            </label>
+            <label>
+              <span>Email:</span>
+              <input type="email" name="email" placeholder="someone@mail.com" required>
+              <img class="party-check" src="images/icons/check.png" alt="check mark">
+            </label>
+            <label>
+              <span>Phone:</span>
+              <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="234-555-9876" required>
+              <img class="party-check" src="images/icons/check.png" alt="check mark">
+            </label>
+            <label>
+              <span>Country/State:</span>
+              <input type="text" name="origin" required>
+              <img class="party-check" src="images/icons/check.png" alt="check mark">
+            </label>
+            <label>
+              <span>Special Accomodations:</span>
+              <textarea type="text" name="accomodations"></textarea>
+            </label>
+          </div>
+
+          <hr>
+
+          <section class="end-form">
+            <input type="submit" value="Make a reservation" class="submit">
+          </section>
+        </form>
+      </section>
+    </div>
+    <h2 class="low">Contact Us!</h2>
+    <section class="contact thin">
+      <div>
+        <div class="logo">
+          <img class="logo-box" src="images/icons/temple_logo.png" alt="Image logo" />
+          <div>
+            <h2>Temple</h2>
+            <h3>Inn & Suites</h3>
+          </div>
+        </div>
+        <address class="info">
+          <a href="tel:+12345559876">+1 (234) 555-9876</a>
+          <a href="mailto:inquiries@templeinn.com">inquiries@templeinn.com</a>
+          <p><strong>Hours:</strong></p>
+          <p>Weekdays: 9am to 1am</p>
+          <p>Fri-Sun: 24hrs</p>
+        </address>
+      </div>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=4800%20Montgomery%20Ln&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+          <a href="https://www.whatismyip-address.com"></a>
+          <br>
+          <a href="https://www.embedgooglemap.net">how to add a google map to html</a>
+        </div>
+      </div>
+    </section>
 
   </main>
 
   <footer>
-
+    <p>&copy;2022 Temple Inn & Suites</p>
+    <p>Last visited: <em><span id="last-visited"></span></em></p>
+    <p>Last Modified: <em><span id="last-modified"></span></em></p>
   </footer>
-</body>
 
-</html>
+  <script src="js/form-fill.js"></script>
+  <script src="js/visits.js"></script>
+</body>

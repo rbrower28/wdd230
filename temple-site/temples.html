@@ -29,20 +29,56 @@
     </div>
 
     <form method="get" action="reservation.html">
-      <label class="form-date">Start Date: <input type="date" name="st_date" /></label>
-      <label class="form-date">End Date: <input type="date" name="end_date" /></label>
-      <label class="form-smaller">Party Size: <input type="number" name="party_size" min="1" max="50"></label>
+      <label class="form-date">Start Date: <input type="date" name="st_date"></label>
+      <label class="form-date">End Date: <input type="date" name="end_date"></label>
+      <label class="form-smaller"># Rooms: <input type="number" name="rooms" min="1" max="15"></label>
       <input class="form-send" type="submit" value="Check Availability">
     </form>
   </header>
 
   <main>
+    <h1>Get to know our temples</h1>
+    <section class="temple-grid" id="temple-grid"></section>
+
+    <h2 class="low">Contact Us!</h2>
+    <section class="contact thin">
+      <div>
+        <div class="logo">
+          <img class="logo-box" src="images/icons/temple_logo.png" alt="Image logo" />
+          <div>
+            <h2>Temple</h2>
+            <h3>Inn & Suites</h3>
+          </div>
+        </div>
+        <address class="info">
+          <a href="tel:+12345559876">+1 (234) 555-9876</a>
+          <a href="mailto:inquiries@templeinn.com">inquiries@templeinn.com</a>
+          <p><strong>Hours:</strong></p>
+          <p>Weekdays: 9am to 1am</p>
+          <p>Fri-Sun: 24hrs</p>
+        </address>
+      </div>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=4800%20Montgomery%20Ln&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+          <a href="https://www.whatismyip-address.com"></a>
+          <br>
+          <a href="https://www.embedgooglemap.net">how to add a google map to html</a>
+        </div>
+      </div>
+    </section>
 
   </main>
 
   <footer>
-
+    <p>&copy;2022 Temple Inn & Suites</p>
+    <p>Last visited: <em><span id="last-visited"></span></em></p>
+    <p>Last Modified: <em><span id="last-modified"></span></em></p>
   </footer>
+
+  <script src="js/temples.js"></script>
+  <script src="js/visits.js"></script>
 </body>
 
 </html>

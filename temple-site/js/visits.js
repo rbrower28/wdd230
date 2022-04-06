@@ -2,10 +2,7 @@
 
 const now = new Date()
 
-const today = now.getDate()
-const fullDate = new Intl.DateTimeFormat("en-UK", {
-	dateStyle: "full"
-}).format(now);
+const fullDate = new Intl.DateTimeFormat("en-US").format(now);
 
 if (localStorage.getItem('last-visit') === null) {
     localStorage.setItem('last-visit', fullDate);
@@ -16,4 +13,6 @@ if (localStorage.getItem('last-visit') === null) {
 
 document.querySelector('#last-visited').textContent = last;
 
-localStorage.setItem('last-visit', today);
+localStorage.setItem('last-visit', fullDate);
+
+document.querySelector("#last-modified").textContent = document.lastModified;

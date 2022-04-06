@@ -6,8 +6,6 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
 
-    console.table(jsObject)
-
     // Establish weather variables
     
     const temp = Math.round(jsObject.list[0].main.temp)
@@ -27,8 +25,6 @@ fetch(apiURL2)
   .then((response) => response.json())
   .then((jsObject) => {
 
-    console.table(jsObject)
-
     // write date adding function
 
     Date.prototype.addDays = function (days) {
@@ -46,7 +42,7 @@ fetch(apiURL2)
     const firstDayName = date.toLocaleString(
       'default', {weekday: 'long'}
     );
-    console.log(firstDayName)
+    
     document.querySelector("#today").textContent = firstDayName;
     document.querySelector("#today-temp").textContent = Math.round(jsObject.daily[0].temp.day);
 
@@ -56,7 +52,7 @@ fetch(apiURL2)
     const secondDayName = date2.toLocaleString(
       'default', {weekday: 'long'}
     );
-    console.log(secondDayName)
+    
     document.querySelector("#tomorrow").textContent = secondDayName;
     document.querySelector("#tomorrow-temp").textContent = Math.round(jsObject.daily[1].temp.day);
 
@@ -66,7 +62,7 @@ fetch(apiURL2)
     const thirdDayName = date3.toLocaleString(
       'default', {weekday: 'long'}
     );
-    console.log(thirdDayName)
+    
     document.querySelector("#next-day").textContent = thirdDayName;
     document.querySelector("#next-day-temp").textContent = Math.round(jsObject.daily[2].temp.day);
 

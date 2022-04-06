@@ -78,4 +78,47 @@
     font-size: 400%;
   }
 
+  .social {
+    font-size: 150%;
+  }
+
+  .social1 {
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .social2 {
+    justify-content: center;
+  }
+  
+  .social3 {
+    justify-content: flex-end;
+  }
+
+  .social a {
+    flex-direction: row;
+  }
+
+  .contact {
+    flex-direction: row;
+  }
+
+  footer {
+    flex-direction: row;
+  }
+
+  .radio,
+  .dates,
+  .party,
+  .user-info label {
+    flex-direction: row;
+  }
+
+  .party .radio {
+    max-width: 400px;
+    margin: auto;
+    padding: 2rem;
+  }
+
 }

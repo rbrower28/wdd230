@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
 }
 
-p, a, span, label, li {
+p, a, span, label, li, input {
   font-family: 'Noto Sans', sans-serif;
 }
 
@@ -48,6 +48,14 @@ section {
 
 section.thin {
   margin: 2rem auto;
+}
+
+.thick {
+  padding: 2rem 0;
+}
+
+.low {
+  margin-top: 5rem;
 }
 
 .background {
@@ -123,7 +131,7 @@ header label {
   background-color: white;
   border: 1px solid black;
   border-radius: 3px;
-  font-size: 105%;
+  font-size: 100%;
   padding: 5px;
   margin: 0 auto 1rem;
 }
@@ -161,14 +169,14 @@ header label {
   min-height: 150px;
 }
 
-main a {
+.link {
   padding: .5rem 1rem;
   border: 2px solid var(--pink);
   background-color: var(--yellow);
   border-radius: 15px;
 }
 
-main a:hover {
+.link:hover {
   background-color: var(--pink);
 }
 
@@ -298,7 +306,7 @@ main a:hover {
 }
 
 .daily-temps div {
-  background-color: var(--peach);
+  background-color: var(--pink);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -308,11 +316,15 @@ main a:hover {
 .daily-temps h3 {
   font-size: 200%;
   margin: 1rem;
+  color: white;
+  text-shadow: 0 0 2px black;
 }
 
 .daily-temps h5 {
   font-size: 200%;
   margin: 1rem;
+  color:white;
+  text-shadow: 0 0 2px black;
 }
 
 
@@ -321,27 +333,26 @@ main a:hover {
 .social {
   display: flex;
   flex-direction: column;
-  font-size: 150%;
 }
 
-.social1 {
-  margin: 1rem;
-  display: flex;
-  justify-content: flex-start;
+.social img {
+  max-height: 100px;
 }
 
-.social2 {
-  justify-content: center;
-}
-
+.social2,
 .social3 {
-  justify-content: flex-end;
+  background-color: none;
 }
 
-.social div {
+.social a {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  max-width: 95%;
+}
+
+.social a p {
+  word-wrap: break-word;
 }
 
 .social h4,
@@ -355,13 +366,274 @@ main a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: auto;
+  max-width: 250px;
+  border-top: 1px solid black;
+}
+
+.info a {
+  color: rgb(145, 170, 203);
+  margin: .5rem;
+}
+
+.info p {
+  margin: .3rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 footer {
   background-color: var(--yellow);
   padding: 1rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+
+/* ============= GOOGLE MAP STYLING ============= */
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 300px;
+  width: 400px;
+  max-width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none!important;
+  height: 300px;
+  width: 400px;
+  max-width: 100%;
+}
+
+
+/* ============= RESERVATIONS PAGE STYLING ============= */
+
+.res-back {
+  background-color: var(--yellow);
+  padding: 2rem;
+
+}
+
+.res-back h1 {
+  border: none;
+}
+
+.res-form h3 {
+  font-size: 150%;
+  margin-top: 4rem;
+}
+
+.res-form div {
+  padding: 2rem 2rem 4rem;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.radio label {
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.375em;
+}
+
+.radio input {
+  position: absolute;
+  left: -9999px;
+}
+
+.radio input:checked + span {
+  background-color: #b9cffe;
+}
+
+.radio input:checked + span:before {
+  box-shadow: inset 0 0 0 0.4375em #00005c;
+}
+
+.radio span {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 99em;
+  transition: 0.25s ease;
+}
+
+.radio span:hover {
+  background-color: #b9cffe;
+}
+
+.radio span:before {
+  display: flex;
+  flex-shrink: 0;
+  content: "";
+  background-color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  margin-right: 0.375em;
+  transition: 0.25s ease;
+  box-shadow: inset 0 0 0 0.125em #00005c;
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.dates label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dates span,
+.party span {
+  padding: 1rem;
+  font-size: 120%;
+}
+
+.dates input {
+  width: 225px;
+  height: 50px;
+  font-size: 150%;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.party label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.party input {
+  width: 100px;
+  height: 60px;
+  font-size: 200%;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.res-form img {
+  height: 40px;
+  margin: 10px;
+  display: none;
+}
+
+.cap {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-info,
+.end-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-info label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.user-info span {
+  font-size: 120%;
+}
+
+.user-info input {
+  width: 225px;
+  height: 40px;
+  margin: 1rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.user-info textarea {
+  width: 225px;
+  max-width: 225px;
+  min-width: 225px;
+  min-height: 60px;
+  margin: 1rem;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.res-form input:required:valid ~ img {
+  display: inline;
+}
+
+.res-form .submit {
+  padding: 1rem 2rem;
+  background-color: var(--green);
+  border: 2px solid black;
+  border-radius: 15px;
+  font-size: 130%;
+}
+
+.res-form .submit:hover {
+  background-color: var(--pink);
+}
+
+
+/* ============= THANK YOU PAGE STYLING ============= */
+
+.thanks {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 3rem;
+}
+
+.thanks h1 {
+  border: none;
+}
+
+.thanks p {
+  text-align: center;
+}
+
+.thanks span {
+  font-family: inherit;
 }
