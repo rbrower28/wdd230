@@ -121,4 +121,13 @@
     padding: 2rem;
   }
 
+  #temple-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  #temple-grid div {
+    padding: 2rem;
+  }
+
 }

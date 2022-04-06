@@ -637,3 +637,34 @@ hr {
 .thanks span {
   font-family: inherit;
 }
+
+
+/* ============= TEMPLES PAGE STYLING ============= */
+
+#temple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+#temple-grid div {
+  margin: auto;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: var(--peach);
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#temple-grid img {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+#temple-grid h3 {
+  font-size: 200%;
+}

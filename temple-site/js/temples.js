@@ -21,42 +21,28 @@ function displayTemples(temple) {
   let card = document.createElement('div');
   let img = document.createElement('img');
   let h3 = document.createElement('h3');
-  let pNumDedicated = document.createElement('p');
+  let pNumDedicated = document.createElement('h4');
   let pDedication = document.createElement('p');
-  let dedDate = document.createElement('strong');
-  let pDedicatedBy = document.createElement('p');
-  let dedName = document.createElement('strong');
   let didYouKnow = document.createElement('h4');
   let fact = document.createElement('p');
 
-  // set strong properties first
-
-  dedDate = temple.dedication;
-  dedName = temple.dedicatedBy;
-
   // Set properties to the other elements
-  h2.textContent = temple.location;
-  pDedication.textContent = "Dedicated on" + dedDate;
-  pDedicatedBy.textContent = "by" + dedName;
+  h3.textContent = temple.location;
+  pDedication.textContent = "Dedicated on " + temple.dedication + " by " + temple.dedicatedBy + ".";
   pNumDedicated.textContent = "The " + temple.numDedicated + " temple."
   didYouKnow.textContent = "Did you know?"
   fact.textContent = temple.didYouKnow;
 
   // Building the image attributes
-  logo.setAttribute('src', business.logoUrl);
-  logo.setAttribute('alt', `The logo of ${business.name}`);
-  logo.setAttribute('loading', 'lazy');
-
-  // setting attributes for a element
-  pWebsite.textContent = business.website;
-  pWebsite.setAttribute('href', business.website)
+  img.setAttribute('src', temple.imgUrl);
+  img.setAttribute('alt', `The temple in ${temple.location}`);
+  img.setAttribute('loading', 'lazy');
 
   // Add/append the section(card) with the h2 element
   card.appendChild(h3);
   card.appendChild(img);
   card.appendChild(pNumDedicated);
   card.appendChild(pDedication);
-  card.appendChild(pDedicatedBy);
   card.appendChild(didYouKnow);
   card.appendChild(fact);
 
