@@ -71,6 +71,10 @@ img {
   max-width: 100%;
 }
 
+li {
+  word-wrap: break-word;
+}
+
 
 /* ============= HEADER STYLING ============= */
 
@@ -404,6 +408,11 @@ footer {
   justify-content: space-around;
 }
 
+footer p,
+footer a {
+  margin: 1rem 0;
+}
+
 /* ============= GOOGLE MAP STYLING ============= */
 
 .mapouter {
@@ -667,4 +676,9 @@ hr {
 
 #temple-grid h3 {
   font-size: 200%;
+}
+
+#temple-grid h4,
+#temple-grid p {
+  margin: .5rem;
 }

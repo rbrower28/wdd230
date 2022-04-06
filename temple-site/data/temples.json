@@ -5,7 +5,13 @@
       "dedication": "17 November 1980",
       "dedicatedBy": "Spencer W. Kimball",
       "numDedicated": "19th",
-      "didYouKnow": "This is one of only five temples where angel Moroni is holding the gold plates.",
+      "phone": "(1) 425-643-5144",
+      "address": "2808 148th Ave SE Bellevue WA 98007-6453 United States",
+      "schedule": "Call for scheduling information.",
+      "services": "Clothing rental and distribution center, no cafeteria or patron housing.",
+      "ordinances": "Baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and sealing.",
+      "closures": "4 July, 8 August - 22 August, 1 October, 23 November - 24 November, 24 December - 25 December, 31 December - 1 January",
+      "didYouKnow": "This is one of only five temples where the Angel Moroni is holding a copy of the gold plates.",
       "imgUrl": "https://rbrower28.github.io/wdd230/temple-site/images/temples/seattle-temple.jpg"
     },
     {
@@ -13,6 +19,12 @@
       "dedication": "1 December 2001",
       "dedicatedBy": "Dieter F. Uchtdorf",
       "numDedicated": "116th",
+      "phone": "(1) 909-389-7369",
+      "address": "1761 Fifth Ave Redlands CA 92374-5503 United States",
+      "schedule": "Call for scheduling information.",
+      "services": "Distribution center, no clothing rental, cafeteria, or patron housing.",
+      "ordinances": "Baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and sealing.",
+      "closures": "4 April - 18 April, 1 October, 17 October - 31 October, 24 November - 25 November, 23 December - 24 December",
       "didYouKnow": "The site for this temple was designated back at the church colony founded there in 1851.",
       "imgUrl": "https://rbrower28.github.io/wdd230/temple-site/images/temples/redlands-temple.jpg"
     },
@@ -21,6 +33,12 @@
       "dedication": "19 January 1986",
       "dedicatedBy": "Thomas S. Monson",
       "numDedicated": "39th",
+      "phone": "(54) 11-4693-9700",
+      "address": "Aut. Tte. Gral. Riccheri N° 4955 B1778DUA Ciudad Evita Buenos Aires, Argentina",
+      "schedule": "Call for sccheduling information.",
+      "services": "Clothing rental and distribution center, no cafeteria or patron housing.",
+      "ordinances": "Baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and sealing.",
+      "closures": "18 April - 2 May, 18 May, 1 October, 3 October - 17 October, 24 December - 25 December, 31 December - 1 January",
       "didYouKnow": "This is the first temple built in Argentina. over 29,000 people attended it's 8 day open house.",
       "imgUrl": "https://rbrower28.github.io/wdd230/temple-site/images/temples/buenos-aires-temple.jpg"
     },
@@ -29,6 +47,12 @@
       "dedication": "9 February 1972",
       "dedicatedBy": "Joseph Fielding Smith",
       "numDedicated": "15th",
+      "phone": "(1) 801-375-5775",
+      "address": "2200 Temple Hill Dr Provo UT 84604-1775 United States",
+      "schedule": "Call for sccheduling information.",
+      "services": "Clothing rental and distribution center, no cafeteria or patron housing.",
+      "ordinances": "Baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and sealing.",
+      "closures": "30 May, 4 July - 18 July, 25 July, 5 September, 1 October, 23 November 2022, 24 November, 19 December - 2 January",
       "didYouKnow": "Even though Joseph Fielding Smith wrote the dedicatory prayer, he asked Harold B. Lee to give it for him.",
       "imgUrl": "https://rbrower28.github.io/wdd230/temple-site/images/temples/provo-temple.jpg"
     }
