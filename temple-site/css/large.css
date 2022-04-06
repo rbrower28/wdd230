@@ -1,6 +1,28 @@
 
-@media only screen and (min-width: 60rem) {
+@media only screen and (min-width: 70rem) {
 
-  
+  #temple-grid {
+    width: 95%;
+    max-width: none;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .foot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contact {
+    max-width: none;
+    width: 95%;
+    justify-content: center;
+  }
+
+  .info {
+    border: none;
+    margin: 3rem;
+  }
 
 }

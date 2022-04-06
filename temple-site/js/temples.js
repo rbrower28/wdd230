@@ -9,7 +9,6 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);
     const temples = jsonObject['temples'];
     temples.forEach(displayTemples);
 });
@@ -19,14 +18,24 @@ function displayTemples(temple) {
 
   // Create overall div
   let card = document.createElement('div');
+  card.classList.add("card");
 
   // part 1: image
+
+  let imgDiv = document.createElement('div');
 
   let img = document.createElement('img');
 
   img.setAttribute('src', temple.imgUrl);
   img.setAttribute('alt', `The temple in ${temple.location}`);
   img.setAttribute('loading', 'lazy');
+
+  let heart = document.createElement('img');
+  heart.setAttribute('src', "../images/icons/heart.webp");
+  heart.classList.add("heart");
+
+  imgDiv.appendChild(img);
+  imgDiv.appendChild(heart);
 
   // part 2: facts
 
@@ -36,10 +45,10 @@ function displayTemples(temple) {
   title.textContent = temple.location;
 
   let numDedicated = document.createElement('h4');
-  NumDedicated.textContent = "The " + temple.numDedicated + " temple.";
+  numDedicated.textContent = "The " + temple.numDedicated + " temple.";
 
   let dedication = document.createElement('p');
-  Dedication.textContent = "Dedicated on " + temple.dedication + " by " + temple.dedicatedBy + ".";
+  dedication.textContent = "Dedicated on " + temple.dedication + " by " + temple.dedicatedBy + ".";
 
   let didYouKnow = document.createElement('h4');
   didYouKnow.textContent = "Did you know?";
@@ -56,6 +65,7 @@ function displayTemples(temple) {
   // part 3: contact
 
   let contactDiv = document.createElement('div');
+  contactDiv.classList.add("contactDiv");
 
   let h4phone = document.createElement('h4');
   h4phone.textContent = "Phone:";
@@ -65,12 +75,12 @@ function displayTemples(temple) {
   let h4address = document.createElement('h4');
   h4address.textContent = "Address:";
   let address = document.createElement('p');
-  address.textContent = temple.address
+  address.textContent = temple.address;
 
   let h4schedule = document.createElement('h4');
   h4schedule.textContent = "Schedule:";
-  let schedule = document.createElement('p')
-  schedule.textContent = temple.schedule
+  let schedule = document.createElement('p');
+  schedule.textContent = temple.schedule;
 
   contactDiv.appendChild(h4phone);
   contactDiv.appendChild(phone);
@@ -85,18 +95,18 @@ function displayTemples(temple) {
 
   let h4services = document.createElement('h4');
   h4services.textContent = "Services:";
-  let services = document.createElement('p')
-  services.textContent = temple.services
+  let services = document.createElement('p');
+  services.textContent = temple.services;
 
   let h4ordinances = document.createElement('h4');
   h4ordinances.textContent = "Ordinances:";
-  let ordinances = document.createElement('p')
-  ordinances.textContent = temple.ordinances
+  let ordinances = document.createElement('p');
+  ordinances.textContent = temple.ordinances;
 
   let h4closures = document.createElement('h4');
   h4closures.textContent = "Closures:";
-  let closures = document.createElement('p')
-  closures.textContent = temple.closures
+  let closures = document.createElement('p');
+  closures.textContent = temple.closures;
 
   infoDiv.appendChild(h4services);
   infoDiv.appendChild(services);
@@ -107,7 +117,7 @@ function displayTemples(temple) {
 
 
   // Add/append the section(card) with the h2 element
-  card.appendChild(img);
+  card.appendChild(imgDiv);
   card.appendChild(factsDiv);
   card.appendChild(contactDiv);
   card.appendChild(infoDiv);

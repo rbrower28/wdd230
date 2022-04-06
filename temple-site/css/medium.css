@@ -121,13 +121,12 @@
     padding: 2rem;
   }
 
-  #temple-grid {
+  .card {
+    padding: 2rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    border-radius: 20px;
   }
 
-  #temple-grid div {
-    padding: 2rem;
-  }
+
 
 }
