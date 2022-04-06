@@ -1,6 +1,6 @@
 // Fetching and placing JSON data
 
-const requestURL = 'https://rbrower28.github.io/temple-site/data/temples.json';
+const requestURL = 'https://rbrower28.github.io/wdd230/temple-site/data/temples.json';
 const cards = document.querySelector('.temple-grid');
 
 
