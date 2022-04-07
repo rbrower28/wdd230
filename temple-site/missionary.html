@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Temple Inn & Suites - Missionary</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content= "Missionary page for the hotel chain Temple Inn & Suites." />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/medium.css" />
+  <link rel="stylesheet" type="text/css" href="css/large.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <img class="logo-box" src="images/icons/temple_logo.webp" alt="Image logo" />
+      <div>
+        <h2>Temple</h2>
+        <h3>Inn & Suites</h3>
+      </div>
+      <a href="index.html">Home</a>
+      <a href="reservation.html">Reservations</a>
+      <a href="services.html">Services</a>
+      <a href="temples.html">Temples</a>
+    </div>
+
+    <form method="get" action="reservation.html">
+      <label class="form-date">Start Date: <input type="date" name="st_date"></label>
+      <label class="form-date">End Date: <input type="date" name="end_date"></label>
+      <label class="form-smaller"># Rooms: <input type="number" name="rooms" min="1" max="15"></label>
+      <input class="form-send" type="submit" value="Check Availability">
+    </form>
+  </header>
+
+  <main id="missionary">
+    <h1>You focus on the service... We'll handle everything else!</h1>
+    <h3>Our full-time missionary suites are top-notch.</h3>
+    <section class="grid-3">
+      <div class="first"></div>
+      <div class="second"></div>
+      <div class="third"></div>
+    </section>
+
+    <section>
+      <h3>They include:</h3>
+      <ul class="big">
+        <li>24 hour room service</li>
+        <li>Daily room cleaning and maintenance</li>
+        <li>Shared study and meeting rooms</li>
+        <li>Access to missionary and family history resources</li>
+      </ul>
+    </section>
+
+    <section class="mis-form">
+      <h2>Get in contact with us!</h2>
+      <form method="get" action="thankyou.html">
+        <div class="user-info">
+          <label>
+            <span>Full Name</span>
+            <input type="text" name="fname" required>
+            <img class="party-check" src="images/icons/check.webp" alt="check mark">
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required>
+            <img class="party-check" src="images/icons/check.webp" alt="check mark">
+          </label>
+          <label>
+            <span>Additional information</span>
+            <textarea type="text" name="accomodations"></textarea>
+          </label>
+        </div>
+        <section class="end-form thin">
+          <input type="submit" value="Send" class="submit">
+        </section>
+      </form>
+    </section>
+    
+    <h2 class="low">Contact Us!</h2>
+    <section class="contact thin">
+      <div class="foot">
+        <div class="logo">
+          <img class="logo-box" src="images/icons/temple_logo.webp" alt="Image logo" />
+          <div>
+            <h2>Temple</h2>
+            <h3>Inn & Suites</h3>
+          </div>
+        </div>
+        <address class="info">
+          <a href="tel:+12345559876">+1 (234) 555-9876</a>
+          <a href="mailto:inquiries@templeinn.com">inquiries@templeinn.com</a>
+          <p><strong>Hours:</strong></p>
+          <p>Weekdays: 9am to 1am</p>
+          <p>Fri-Sun: 24hrs</p>
+        </address>
+      </div>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=4800%20Montgomery%20Ln&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy;2022 Temple Inn & Suites</p>
+    <p>Last visited: <em><span id="last-visited"></span></em></p>
+    <p>Last Modified: <em><span id="last-modified"></span></em></p>
+    <a href="attributions.html">Attributions</a>
+  </footer>
+
+  <script src="js/visits.js"></script>
+</body>
+
+</html>

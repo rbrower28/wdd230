@@ -331,6 +331,39 @@ header label {
   text-shadow: 0 0 2px black;
 }
 
+.notif {
+  z-index: 2;
+  padding: 1rem;
+  width: 100%;
+  background-color: #ff928b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid black;
+}
+
+.notif h4 {
+  margin: .5rem 1rem;
+}
+
+.notif button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  font-size: 150%;
+  margin: .5rem 1rem;
+}
+
+.hidden {
+  position: absolute;
+  top: -200px;
+}
+
 
 /* ============= FOOTER STYLING ============= */
 
@@ -434,14 +467,25 @@ footer a {
 
 /* ============= RESERVATIONS PAGE STYLING ============= */
 
+.res-hero {
+  background-image: url("../images/index/hotel.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  padding: 2rem;
+}
+
+.res-hero h1 {
+  border: none;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+
 .res-back {
   background-color: var(--yellow);
   padding: 2rem;
 
-}
-
-.res-back h1 {
-  border: none;
 }
 
 .res-form h3 {
@@ -697,7 +741,154 @@ hr {
   padding: 2rem;
 }
 
-.heart {
+.heartBtn {
   position: relative;
-  top: 0;
+  top: -60px;
+  left: 10px;
+  max-width: 50px;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+
+/* ============= SERVICES PAGE STYLING ============= */
+
+#service img {
+  width: 100%;
+  margin: auto;
+}
+
+#service ul {
+  margin: auto;
+  max-width: 30rem;
+}
+
+#service h1 {
+  max-width: 40rem;
+  padding: 2rem;
+}
+
+#service hr {
+  width: 80%;
+  max-width: 50rem;
+}
+
+#service li {
+  padding: 1rem;
+  font-size: 125%;
+  line-height: 130%;
+  list-style-type: none;
+  text-align: center;
+}
+
+
+/* ============= MISSIONARY PAGE STYLING ============= */
+
+#missionary h1 {
+  padding: 2rem 0;
+}
+
+#missionary h3 {
+  font-size: 150%;
+}
+
+ul.big li {
+  padding: 1rem;
+  margin-left: 10%;
+}
+
+#missionary .first {
+  background-image: url("../images/missionary/hotel-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#missionary .second {
+  background-image: url("../images/missionary/hotel-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#missionary .third {
+  background-image: url("../images/missionary/study-room.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#missionary .grid-3 div {
+  margin: 1rem 0;
+  min-height: 300px;
+}
+
+.mis-form {
+  border: 2px solid black;
+  background-color: var(--yellow);
+}
+
+.mis-form h2 {
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 80%;
+}
+
+.mis-form img {
+  height: 40px;
+  margin: 10px;
+  display: none;
+}
+
+.mis-form input:required:valid ~ img {
+  display: inline;
+}
+
+.mis-form .submit {
+  padding: 1rem 3rem;
+  background-color: var(--green);
+  border: 2px solid black;
+  border-radius: 15px;
+  font-size: 130%;
+}
+
+.mis-form .submit:hover {
+  background-color: var(--pink);
+}
+
+
+/* ============= RECEPTIONS PAGE STYLING ============= */
+
+.rec-hero {
+  margin-top: -202px;
+  min-height: 500px;
+  padding: 2rem;
+  background-image: url("../images/reception/reception-1.jpeg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rec-hero h1 {
+  margin: 10rem auto;
+  color: white;
+  text-shadow: 0 0 5px black;
+  border: none;
+}
+
+#reception li {
+  padding: 1rem 3rem;
+  font-size: 125%;
+  line-height: 130%;
+  list-style-type: none;
+  text-align: center;
+}
+
+h2.thick {
+  padding: 2rem;
 }

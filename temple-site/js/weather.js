@@ -1,29 +1,26 @@
-// weather
 
-const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5786882&appid=41d725cc098e150ee6d99851e1d2661f&units=imperial";
+const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=47.610377&lon=-122.2006786&appid=41d725cc098e150ee6d99851e1d2661f&units=imperial&lang=en";
 
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
 
+    console.table(jsObject)
+
+    console.log(jsObject.alerts)
+
     // Establish weather variables
-    
-    const temp = Math.round(jsObject.list[0].main.temp)
-    const desc = jsObject.list[0].weather[0].description;
+
+    const temp = Math.round(jsObject.current.temp);
+    const desc = jsObject.current.weather[0].description;
+    const humidity = jsObject.current.humidity;
     
     // set weather elements
 
     document.querySelector("#c-temp").textContent = temp;
     document.querySelector("#c-condition").textContent = desc;
     document.querySelector("#c-location").textContent = "Seattle.";
-  });
-
-
-const apiURL2 = "https://api.openweathermap.org/data/2.5/onecall?lat=47.610377&lon=-122.2006786&appid=41d725cc098e150ee6d99851e1d2661f&units=imperial";
-
-fetch(apiURL2)
-  .then((response) => response.json())
-  .then((jsObject) => {
+    document.querySelector("#c-humidity").textContent = humidity;
 
     // write date adding function
 
@@ -65,5 +62,20 @@ fetch(apiURL2)
     
     document.querySelector("#next-day").textContent = thirdDayName;
     document.querySelector("#next-day-temp").textContent = Math.round(jsObject.daily[2].temp.day);
+
+
+    // conditional logic for weather warnings
+
+    const warning = "Flood warning for Seattle and surrounding areas";
+
+    if (1 == 1) {
+      document.querySelector("#warning").textContent = warning;
+      document.querySelector(".notif").classList.toggle("hidden");
+    };
+
+    const closeButton = document.querySelector("#close-notif");
+    closeButton.addEventListener('click', function(){
+      document.querySelector(".notif").classList.toggle("hidden");
+    })
 
   });

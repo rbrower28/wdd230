@@ -25,4 +25,13 @@
     margin: 3rem;
   }
 
+  .rec-hero,
+  .res-hero {
+    font-size: 120%;
+  }
+
+  .res-form h3 {
+    font-size: 200%;
+  }
+
 }

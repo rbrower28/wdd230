@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Temple Inn & Suites - Receptions</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content= "Receptions page for the hotel chain Temple Inn & Suites." />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/medium.css" />
+  <link rel="stylesheet" type="text/css" href="css/large.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <img class="logo-box" src="images/icons/temple_logo.webp" alt="Image logo" />
+      <div>
+        <h2>Temple</h2>
+        <h3>Inn & Suites</h3>
+      </div>
+      <a href="index.html">Home</a>
+      <a href="reservation.html">Reservations</a>
+      <a href="services.html">Services</a>
+      <a href="temples.html">Temples</a>
+    </div>
+
+    <form method="get" action="reservation.html">
+      <label class="form-date">Start Date: <input type="date" name="st_date"></label>
+      <label class="form-date">End Date: <input type="date" name="end_date"></label>
+      <label class="form-smaller"># Rooms: <input type="number" name="rooms" min="1" max="15"></label>
+      <input class="form-send" type="submit" value="Check Availability">
+    </form>
+  </header>
+
+  <main id="reception">
+    <div class="rec-hero">
+      <section>
+          <h1>Have the reception you've always dreamed of.</h1>
+      </section>
+    </div>
+
+    <h2 class="thick">We have a wide selection of everything you might need:</h2>
+    <section class="grid-2">
+      <img src="images/reception/reception-2.jpg" alt="reception hall">
+      <ul>
+        <li>Food, drink, and dessert catering options from a variety of restaurants.</li>
+        <li>Music ranging from live bands to solo artists to experienced DJs.</li>
+      </ul>
+    </section>
+    <section class="grid-2">
+      <ul>
+        <li>Wide stage and full sound system.</li>
+        <li>Spatious outdoor area for group pictures and reception activities.</li>
+      </ul>
+      <img src="images/reception/reception-3.jpg" alt="outdoor reception area">
+    </section>
+
+    <h2 class="thick">Book with us now!</h2>
+
+    <section class="contact thin">
+      <div class="foot">
+        <div class="logo">
+          <img class="logo-box" src="images/icons/temple_logo.webp" alt="Image logo" />
+          <div>
+            <h2>Temple</h2>
+            <h3>Inn & Suites</h3>
+          </div>
+        </div>
+        <address class="info">
+          <a href="tel:+12345559876">+1 (234) 555-9876</a>
+          <a href="mailto:inquiries@templeinn.com">inquiries@templeinn.com</a>
+          <p><strong>Hours:</strong></p>
+          <p>Weekdays: 9am to 1am</p>
+          <p>Fri-Sun: 24hrs</p>
+        </address>
+      </div>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=4800%20Montgomery%20Ln&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy;2022 Temple Inn & Suites</p>
+    <p>Last visited: <em><span id="last-visited"></span></em></p>
+    <p>Last Modified: <em><span id="last-modified"></span></em></p>
+    <a href="attributions.html">Attributions</a>
+  </footer>
+
+  <script src="js/visits.js"></script>
+</body>
+
+</html>

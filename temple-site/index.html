@@ -16,6 +16,10 @@
 
 <body>
   <header>
+    <div class="notif hidden">
+      <h4>Weather Warning: <span id="warning"></span></h4>
+      <button id="close-notif">&#x2715;</button>
+    </div>
     <div class="header">
       <img class="logo-box" src="images/icons/temple_logo.webp" alt="Image logo" />
       <div>
@@ -86,6 +90,8 @@
         <h5 id="c-condition"></h5>
         <p>in</p>
         <h5 id="c-location"></h5>
+        <p>Humidity:</p>
+        <h5><span id="c-humidity"></span>%</h5>
       </section>
     </div>
 
@@ -143,9 +149,6 @@
         <div class="gmap_canvas">
           <iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=4800%20Montgomery%20Ln&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
           </iframe>
-          <a href="https://www.whatismyip-address.com"></a>
-          <br>
-          <a href="https://www.embedgooglemap.net">how to add a google map to html</a>
         </div>
       </div>
     </section>

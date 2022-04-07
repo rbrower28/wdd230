@@ -30,12 +30,21 @@ function displayTemples(temple) {
   img.setAttribute('alt', `The temple in ${temple.location}`);
   img.setAttribute('loading', 'lazy');
 
+  let heartBtn = document.createElement('button');
+  heartBtn.classList.add("heartBtn");
+  
   let heart = document.createElement('img');
-  heart.setAttribute('src', "../images/icons/heart.webp");
+  heart.setAttribute('src', "https://rbrower28.github.io/wdd230/temple-site/images/icons/heart.webp");
   heart.classList.add("heart");
+  heart.id = temple.location[0];
+
+  heartBtn.appendChild(heart);
+
+  heartBtn.addEventListener('click', like);
+  like_setup(heartBtn);
 
   imgDiv.appendChild(img);
-  imgDiv.appendChild(heart);
+  imgDiv.appendChild(heartBtn);
 
   // part 2: facts
 
@@ -124,4 +133,46 @@ function displayTemples(temple) {
 
   // Add/append the existing HTML div with the cards class with the section(card)
   cards.appendChild(card);
+}
+
+
+function like(e) {
+  let element = e.target;
+
+  let likes = localStorage.getItem('likes');
+
+  if (element.getAttribute('src') === "https://rbrower28.github.io/wdd230/temple-site/images/icons/heart.webp") {
+
+    element.setAttribute("src", "https://rbrower28.github.io/wdd230/temple-site/images/icons/heart-full.webp");
+
+    likes += element.id;
+
+    localStorage.setItem('likes', likes);
+
+  } else {
+
+    element.setAttribute("src", "https://rbrower28.github.io/wdd230/temple-site/images/icons/heart.webp")
+
+    let new_likes = likes.replace(element.id, "");
+
+    localStorage.setItem('likes', new_likes);
+
+  };
+}
+
+
+function like_setup(e) {
+  console.log(e)
+  console.log(e.childNodes[0])
+  let element = e.childNodes[0];
+
+  if (localStorage.getItem('likes') == null) {
+    localStorage.setItem('likes', '')
+  }
+
+  let likes = localStorage.getItem('likes');
+
+  if (likes.includes(element.id)) {
+    element.setAttribute("src", "https://rbrower28.github.io/wdd230/temple-site/images/icons/heart-full.webp");
+  }
 }
