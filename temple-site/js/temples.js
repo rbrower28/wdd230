@@ -162,8 +162,7 @@ function like(e) {
 
 
 function like_setup(e) {
-  console.log(e)
-  console.log(e.childNodes[0])
+  
   let element = e.childNodes[0];
 
   if (localStorage.getItem('likes') == null) {

@@ -5,8 +5,6 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
 
-    console.table(jsObject)
-
     // Establish weather variables
 
     const temp = Math.round(jsObject.current.temp);
