@@ -464,6 +464,10 @@ footer a {
   max-width: 100%;
 }
 
+iframe {
+  border: none;
+}
+
 
 /* ============= RESERVATIONS PAGE STYLING ============= */
 

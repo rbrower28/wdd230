@@ -7,8 +7,6 @@ fetch(apiURL)
 
     console.table(jsObject)
 
-    console.log(jsObject.alerts)
-
     // Establish weather variables
 
     const temp = Math.round(jsObject.current.temp);
@@ -66,9 +64,9 @@ fetch(apiURL)
 
     // conditional logic for weather warnings
 
-    const warning = "Flood warning for Seattle and surrounding areas";
+    const warning = jsObject.alerts.description;
 
-    if (1 == 1) {
+    if (jsObject.alerts) {
       document.querySelector("#warning").textContent = warning;
       document.querySelector(".notif").classList.toggle("hidden");
     };
