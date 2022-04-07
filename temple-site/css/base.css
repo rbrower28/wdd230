@@ -255,7 +255,6 @@ header label {
 }
 
 .grid-2 a {
-  float: center;
   margin: 1rem;
 }
 
@@ -378,7 +377,7 @@ header label {
 
 .social2,
 .social3 {
-  background-color: none;
+  background-color: inherit;
 }
 
 .social a {
